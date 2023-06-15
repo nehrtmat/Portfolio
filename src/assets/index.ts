@@ -31,6 +31,7 @@ import leetcodeDark from './social/leetcodeDark.svg';
 import linkedin from './social/linkedin.svg';
 import githubLight from './social/githubLight.svg';
 import githubDark from './social/githubDark.svg';
+import gmail from './social/gmail.svg';
 
 
 export {
@@ -65,4 +66,5 @@ export {
   linkedin,
   githubLight,
   githubDark,
+  gmail,
 };

@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { styles } from '../styles';
 import { context } from '../App';
-import { comp, leetcodeLight, leetcodeDark, linkedin, githubLight, githubDark } from '../assets';
+import { comp, leetcodeLight, leetcodeDark, linkedin, githubLight, githubDark, gmail } from '../assets';
 import './blinkingCursor.css';
 
 const Hero = () => {
@@ -21,6 +21,7 @@ const Hero = () => {
 							<a href='https://leetcode.com/Aayush65' target='__blank'><img src={isLight ? leetcodeLight : leetcodeDark} alt="leetcode" className='w-7 md:w-10 hover:scale-105' /></a>
 							<a href='https://linkedin.com/in/Aayush65' target='__blank'><img src={linkedin} alt="linkedin" className='w-7 md:w-10 hover:scale-105' /></a>
 							<a href='https://github.com/Aayush65' target='__blank'><img src={isLight ? githubLight : githubDark} alt="github" className='w-7 md:w-10 hover:scale-105' /></a>
+							<a href='mailto:cdtaayushgupta@gmail.com' target='__blank'><img src={gmail} alt="gmail" className='w-7 md:w-10 hover:scale-105' /></a>
 						</div>
 						<p className={`${styles.heroSubText} ${isLight ? "text-black-200" : "text-white-100"} mt-2`}>I am a Full Stack Developer and a LeetCode enthusiast.</p>
 					</div>

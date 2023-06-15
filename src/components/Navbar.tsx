@@ -8,7 +8,7 @@ const Navbar = () => {
 	const [active, setActive] = useState("");
 	const [toggle, setToggle] = useState(false);
 	const { isLight, setIsLight } = useContext(context);
-    const navLinks = ["About", "Skills", "Contact"];
+    const navLinks = ["About", "Skills", "Projects"];
 
 	return (
 		<nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${ isLight ? "bg-primary-light" : "bg-primary-dark" } bg-opacity-80`}>
