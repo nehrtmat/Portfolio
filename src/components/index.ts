@@ -1,5 +1,6 @@
 import Hero from './Hero';
 import Navbar from './Navbar';
+import Resume from './Resume';
 // import About from './About';
 // import Tech from './Tech';
 // import Experience from './Experience';
@@ -10,6 +11,7 @@ import Navbar from './Navbar';
 export {
   Hero,
   Navbar,
+  Resume,
 //   About,
 //   Tech,
 //   Experience,

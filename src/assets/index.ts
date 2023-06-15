@@ -1,14 +1,10 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
 import menudark from "./menudark.svg";
 import menulight from "./menulight.svg";
 import closedark from "./closedark.svg";
 import closelight from "./closelight.svg";
 import comp from "./comp.png";
+import download from "./download.svg";
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
@@ -30,27 +26,21 @@ import sql from './tech/sql.png';
 import django from './tech/django.png';
 import springboot from './tech/springboot.png';
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import leetcodeLight from './social/leetcodeLight.svg';
+import leetcodeDark from './social/leetcodeDark.svg';
+import linkedin from './social/linkedin.svg';
+import githubLight from './social/githubLight.svg';
+import githubDark from './social/githubDark.svg';
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 
 export {
   logo,
-  backend,
-  creator,
-  mobile,
-  web,
-  github,
   menulight,
   menudark,
   closedark,
   closelight,
   comp,
+  download,
   bootstrap,
   springboot,
   python,
@@ -70,11 +60,9 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  leetcodeLight,
+  leetcodeDark,
+  linkedin,
+  githubLight,
+  githubDark,
 };

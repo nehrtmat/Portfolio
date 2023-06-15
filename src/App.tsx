@@ -1,6 +1,7 @@
 import { useState, createContext } from 'react';
-import { BrowserRouter as Router } from "react-router-dom";
-import { Navbar, Hero } from './components';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Resume } from './components';
+import MainSite from './MainSite';
 
 export const context = createContext<{ 
 	isLight: boolean, 
@@ -14,18 +15,12 @@ function App() {
 	return (
 		<context.Provider value={{ isLight, setIsLight }}>
 			<Router>
-				<div className="relative z-0 bg-primary">
-					<div className={`${ isLight ? "bg-hero-pattern-light" : "bg-hero-pattern-dark" } bg-cover bg-no-repeat bg-center`}>
-						<Navbar />
-						<Hero />
-					</div>
-					{/* <About />
-					<Tech />
-					<Works />
-					<div className="relative z-0">
-						<Contact />
-					</div> */}
-				</div>
+				<Routes>
+					<Route path="/" element={<MainSite />} />
+				</Routes>
+				<Routes>
+					<Route path="/resume" element={<Resume />} />
+				</Routes>
 			</Router>
 		</context.Provider>
 	)
