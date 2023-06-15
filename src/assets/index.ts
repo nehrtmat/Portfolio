@@ -8,6 +8,7 @@ import menudark from "./menudark.svg";
 import menulight from "./menulight.svg";
 import closedark from "./closedark.svg";
 import closelight from "./closelight.svg";
+import comp from "./comp.png";
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
@@ -49,6 +50,7 @@ export {
   menudark,
   closedark,
   closelight,
+  comp,
   bootstrap,
   springboot,
   python,

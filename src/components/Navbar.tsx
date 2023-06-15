@@ -21,7 +21,7 @@ const Navbar = () => {
 					<img src={logo} alt="logo" className='w-9 h-9 object-contain'/>
 					<p className={`${isLight ? "text-black-100" : "text-white-100"} text-[18px] font-bold cursor-pointer`}>Aayush Gupta</p>
 				</Link>
-				<button onClick={() => setIsLight(!isLight)} className='text-[1.5rem] flex border-black border-2 rounded-full bg-gray-500'>
+				<button onClick={() => setIsLight(!isLight)} className='text-sm ml-4 md:ml-0 md:text-xl flex border-black border-2 rounded-full bg-gray-500'>
 					<div className={`bg-yellow-200 rounded-full p-1 ${!isLight ? 'invisible': null}`}>🌞</div>
 					<div className={`bg-gray-700 rounded-full p-1 none ${isLight ? 'invisible': null}`}>🌚</div>
 				</button>
