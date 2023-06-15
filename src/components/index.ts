@@ -1,4 +1,4 @@
-// import Hero from './Hero';
+import Hero from './Hero';
 import Navbar from './Navbar';
 // import About from './About';
 // import Tech from './Tech';
@@ -8,7 +8,7 @@ import Navbar from './Navbar';
 // import Contact from './Contact';
 
 export {
-//   Hero,
+  Hero,
   Navbar,
 //   About,
 //   Tech,

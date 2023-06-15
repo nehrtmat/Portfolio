@@ -4,8 +4,10 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
+import menudark from "./menudark.svg";
+import menulight from "./menulight.svg";
+import closedark from "./closedark.svg";
+import closelight from "./closelight.svg";
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
@@ -43,8 +45,10 @@ export {
   mobile,
   web,
   github,
-  menu,
-  close,
+  menulight,
+  menudark,
+  closedark,
+  closelight,
   bootstrap,
   springboot,
   python,
