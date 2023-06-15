@@ -3,7 +3,7 @@ import { styles } from '../styles';
 import { context } from '../App';
 
 const Hero = () => {
-    const { mode } = useContext(context);
+    const { isLight } = useContext(context);
 
     return (
         <section className='relative w-full h-screen mx-auto'>
@@ -14,8 +14,8 @@ const Hero = () => {
 				</div>
 
 				<div>
-					<h1 className={`${styles.heroHeadText} ${mode === "light" ? "text-black-100" : "text-white-100"}`}>Hi, I am <span className="text-[#2548e3]">Aayush</span></h1>
-					<p className={`${styles.heroSubText} ${mode === "light" ? "text-black-200" : "text-white-100"} mt-2`}>I am a full stack developer and a LeetCode enthusiast.</p>
+					<h1 className={`${styles.heroHeadText} ${isLight ? "text-black-100" : "text-white-100"}`}>Hi, I am <span className="text-[#2548e3]">Aayush</span></h1>
+					<p className={`${styles.heroSubText} ${isLight ? "text-black-200" : "text-white-100"} mt-2`}>I am a full stack developer and a LeetCode enthusiast.</p>
 				</div>
 			</div>
 		</section>

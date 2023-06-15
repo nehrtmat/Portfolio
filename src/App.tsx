@@ -3,19 +3,19 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Navbar, Hero } from './components';
 
 export const context = createContext<{ 
-	mode: string, 
-	setMode: (newMode: string) => void,
-}>({ mode: "light", setMode: () => {} });
+	isLight: boolean, 
+	setIsLight: (isLight: boolean) => void,
+}>({ isLight: true, setIsLight: () => {} });
 
 function App() {
 
-	const [mode, setMode] = useState<string>("light");
+	const [isLight, setIsLight] = useState<boolean>(true);
 
 	return (
-		<context.Provider value={{ mode, setMode }}>
+		<context.Provider value={{ isLight, setIsLight }}>
 			<Router>
 				<div className="relative z-0 bg-primary">
-					<div className={`bg-hero-pattern-${mode} bg-cover bg-no-repeat bg-center`}>
+					<div className={`${ isLight ? "bg-hero-pattern-light" : "bg-hero-pattern-dark" } bg-cover bg-no-repeat bg-center`}>
 						<Navbar />
 						<Hero />
 					</div>
