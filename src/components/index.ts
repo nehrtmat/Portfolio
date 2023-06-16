@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Resume from './Resume';
 import About from './About';
 import Tech from './Tech';
-// import Works from './Works';
+import Projects from './Projects';
 
 export {
   Hero,
@@ -11,5 +11,5 @@ export {
   Resume,
   About,
   Tech,
-//   Works,
+  Projects,
 }

@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { styles } from "../styles";
 import { context } from "../App";
-import { aws, backend, cp, frontend } from '../assets';
+import { skills } from '../constants';
 import Tilt from 'react-parallax-tilt';
 
 interface SkillCardProps {
@@ -13,7 +13,7 @@ const SkillCard = ( { title, icon }: SkillCardProps ) => {
     const { isLight } = useContext(context);
 	return (
 		<Tilt className={`${isLight ? "blood-blue-gradient" : "rose-sky-gradient" } xs:w-[250px] w-full p-[1px] bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex items-center flex-col`} glareColor={isLight ? '#FF7272': '#A91079'} glareEnable={true} gyroscope={true} glareBorderRadius='20px' glareMaxOpacity={0.5} glarePosition='all' perspective={500} style={{transformStyle: "preserve-3d"}}>
-                <img src={icon} alt={title} className='w-56 h-44 object-contain pointer-events-none' style={{transform: "translateZ(100px)" }} />
+                <img src={icon} alt={title} className='w-56 h-40 object-contain pointer-events-none' style={{transform: "translateZ(100px)" }} />
                 <h3 className={`${isLight ? "text-white" : "text-black" } text-[20px] font-bold text-center`} style={{transform: "translateZ(50px)" }}>{title}</h3>
 		</Tilt>
 	)
@@ -22,7 +22,6 @@ const SkillCard = ( { title, icon }: SkillCardProps ) => {
 
 const About = () => {
     const { isLight } = useContext(context);
-    const skills = [{title: "Competitive Programmer", icon: cp}, {title: "FrontEnd Developer", icon: frontend}, {title: "Backend Developer", icon: backend}, {title: "AWS Solutions Architect", icon: aws}];
 
     return (
         <div id="about" className={`mt-4 ${styles.paddingX} max-w-7xl mx-auto flex flex-col items-start justify-between`}>

@@ -1,34 +1,30 @@
 import { useContext } from 'react';
 import { context } from '../App';
 import { styles } from "../styles";
-
+import { languages, frameworks } from '../constants';
 
 const Tech = () => {
     const { isLight } = useContext(context);
 
     return (
         <div id="skills" className={`mt-4 ${styles.paddingX} max-w-7xl mx-auto flex flex-col items-start justify-between`}>
-            <h2 className={`${styles.sectionHeadText} ${isLight ? "text-black-100" : "text-white-100"}`}>Tech Stack.</h2>
-            {/* <p className={`${styles.sectionSubText} m-10 ml-0`}>Technical Skiils</p>
-            <div className='flex flex-row flex-wrap justify-center gap-10'>
-                {languages.map((language) => (
-                    <div className='w-28 h-28' key={language.name}>
-                        <BallCanvas icon={language.icon} />
+            <p className={`${styles.sectionSubText} ${isLight ? "text-black-200" : "text-white-100" } mt-10 font-semibold`}>My Skills</p><h2 className={`${styles.sectionHeadText} ${isLight ? "text-black-100" : "text-white-100"}`}>Tech Stack.</h2>
+            <p className={`${styles.sectionSubText} ${isLight ? "text-black-100" : "text-white-100"} font-semibold mt-4`}>Technical Languages</p>
+            <div className='flex flex-row flex-wrap justify-center gap-6 md:gap-16 my-10'>
+                {languages.map((language, index) => (
+                    <div key={index} className={`${isLight ? "x1-x2-gradient" : "x3-x4-gradient"} flex items-center justify-center rounded-full p-4`}>
+                        <img title={language.title} src={language.icon} alt={language.title} className={`w-12 h-12 md:w-20 md:h-20 object-contain`}  />
                     </div>
                 ))}
-            </div> */}
-            <p className={`${styles.sectionSubText} ${isLight ? "text-black-100" : "text-white-100"} font-semibold mt-4`}>Technical Skiils</p>
-            <div className='flex flex-row flex-wrap justify-center gap-10'>
-                {/* <BallCanvas stack = {languages} /> */}
             </div>
-            {/* <p className={`${styles.sectionSubText} m-10 ml-0`}>Technologies and Frameworks</p>
-            <div className='flex flex-row flex-wrap justify-center gap-10'>
-                {technologies.map((technology) => (
-                    <div className='w-28 h-28' key={technology.name}>
-                        <BallCanvas icon={technology.icon} />
-                    </div>
+            <p className={`${styles.sectionSubText} ${isLight ? "text-black-100" : "text-white-100"} font-semibold mt-4`}>Technologies and Frameworks</p>
+            <div className='flex flex-row flex-wrap justify-center gap-6 md:gap-16 my-10'>
+                {frameworks.map((framework, index) => (
+                    <div key={index} className={`${isLight ? "x1-x2-gradient" : "x3-x4-gradient"} flex items-center justify-center rounded-full p-4`}>
+                    <img title={framework.title} src={framework.icon} alt={framework.title} className={`w-12 h-12 md:w-20 md:h-20 object-contain`}  />
+                </div>
                 ))}
-            </div> */}
+            </div>
         </div>
     )
 }
