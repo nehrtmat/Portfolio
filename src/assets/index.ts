@@ -16,8 +16,6 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-import bootstrap from './tech/bootstrap.png';
 import c from './tech/c.png';
 import python from './tech/python.png';
 import cpp from './tech/cpp.png';
@@ -47,7 +45,6 @@ export {
   closelight,
   comp,
   download,
-  bootstrap,
   springboot,
   python,
   cpp,
@@ -65,7 +62,6 @@ export {
   redux,
   tailwind,
   typescript,
-  threejs,
   leetcodeLight,
   leetcodeDark,
   linkedin,
