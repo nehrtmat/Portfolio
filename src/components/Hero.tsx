@@ -24,7 +24,7 @@ const Hero = () => {
 						</div>
 						<p className={`${styles.heroSubText} ${isLight ? "text-black-200" : "text-white-100"} mt-2`}>I am a Full Stack Developer and a LeetCode enthusiast.</p>
 					</div>
-					<img src={comp} alt="Working Man" />
+					<img src={comp} alt="Working Man" className='pointer-events-none' />
 				</div>
 			</div>
 		</section>

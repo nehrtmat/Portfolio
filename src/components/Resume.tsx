@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { Navbar } from '.';
 import { context } from '../App';
 import { download } from '../assets';
@@ -8,6 +8,10 @@ const Resume = () => {
     const { isLight } = useContext(context);
     const link: string = "https://drive.google.com/file/d/1N6lLhhq1R_Grc201yIddPjsOF7iEwFvU/preview";
     
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     async function downloadResume() {
         fetch(link, {
             mode: 'no-cors',

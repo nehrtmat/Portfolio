@@ -13,7 +13,7 @@ const SkillCard = ( { title, icon }: SkillCardProps ) => {
     const { isLight } = useContext(context);
 	return (
 		<Tilt className={`${isLight ? "blood-blue-gradient" : "rose-sky-gradient" } xs:w-[250px] w-full p-[1px] bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex items-center flex-col`} glareColor={isLight ? '#FF7272': '#A91079'} glareEnable={true} gyroscope={true} glareBorderRadius='20px' glareMaxOpacity={0.5} glarePosition='all' perspective={500} style={{transformStyle: "preserve-3d"}}>
-                <img src={icon} alt={title} className='w-56 h-44 object-contain' style={{transform: "translateZ(100px)" }} />
+                <img src={icon} alt={title} className='w-56 h-44 object-contain pointer-events-none' style={{transform: "translateZ(100px)" }} />
                 <h3 className={`${isLight ? "text-white" : "text-black" } text-[20px] font-bold text-center`} style={{transform: "translateZ(50px)" }}>{title}</h3>
 		</Tilt>
 	)
@@ -31,7 +31,8 @@ const About = () => {
             <div className={`${isLight ? "text-secondary-text-light" : "text-secondary-dark" } text-[17px] max-w-3xl leading-[30px] md:ml-3`}>
                 I am a Full Stack Developer with experience in MERN stack alongwith working on Chrome Extensions, Django, Redux, REST APIs, etc. I am also familiar with many database query languages including both SQL and NoSQL. <br/> I am a passionate competitive coder boasting a Knight badge and a rating of 1980 on LeetCode with 1000+ questions and streak of almost an year.
             </div>
-			<div className='my-20 flex flex-wrap gap-10'>
+            <p className={`mt-20 mb-5 sm:mb-0 sm:invisible ${isLight ? "text-secondary-text-light" : "text-secondary-dark" } text-[17px] max-w-3xl leading-[30px] md:ml-3 italic`}>(Tilt you phone to see some magic)</p>
+			<div className='mb-20 flex flex-wrap gap-10'>
 				{skills.map((skill, index) => (
 					<SkillCard key={index} title={skill.title} icon={skill.icon} />
 				))}	
