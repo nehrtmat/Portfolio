@@ -33,6 +33,11 @@ import githubLight from './social/githubLight.svg';
 import githubDark from './social/githubDark.svg';
 import gmail from './social/gmail.svg';
 
+import aws from './skills/aws.png';
+import backend from './skills/backend.png';
+import cp from './skills/cp.png';
+import frontend from './skills/frontend.png';
+
 
 export {
   logo,
@@ -67,4 +72,8 @@ export {
   githubLight,
   githubDark,
   gmail,
+  aws,
+  backend,
+  cp,
+  frontend,
 };
