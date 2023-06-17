@@ -30,7 +30,7 @@ const About = () => {
             <div className={`${isLight ? "text-secondary-text-light" : "text-secondary-dark" } text-[17px] max-w-3xl leading-[30px] md:ml-3`}>
                 I am a Full Stack Developer with experience in MERN stack alongwith working on Chrome Extensions, Django, Redux, REST APIs, etc. I am also familiar with many database query languages including both SQL and NoSQL. <br/> I am a passionate competitive coder boasting a Knight badge and a rating of 1980 on LeetCode with 1000+ questions and streak of almost an year.
             </div>
-            <p className={`mt-20 mb-5 sm:mb-0 sm:invisible ${isLight ? "text-secondary-text-light" : "text-secondary-dark" } text-[17px] max-w-3xl leading-[30px] md:ml-3 italic`}>(Tilt you phone to see some magic)</p>
+            <p className={`mt-20 mb-5 sm:mb-0 sm:invisible ${isLight ? "text-secondary-text-light" : "text-secondary-dark" } text-[17px] max-w-3xl leading-[30px] md:ml-3 italic`}>(Tilt your phone to see some magic)</p>
 			<div className='mb-20 flex flex-wrap gap-10'>
 				{skills.map((skill, index) => (
 					<SkillCard key={index} title={skill.title} icon={skill.icon} />

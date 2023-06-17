@@ -36,8 +36,7 @@ export const projects = [
     {
         title: 'Portfolio', 
         description: 'My humble portfolio website', 
-        // link: 'https://aayush65.com',
-        link: 'http://localhost:5173/',
+        link: 'https://aayush65.com',
         source: "https://github.com/Aayush65/Portfolio"
     },
     {

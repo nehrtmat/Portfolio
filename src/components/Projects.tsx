@@ -24,10 +24,10 @@ const Projects = () => {
                             </div>
                         ))}
                     </div>
-                    <iframe src={projects[active].link} className={`hidden sm:block w-[400px] h-[600px] border-2 ${isLight ? "border-black" : "border-white"} rounded-xl mb-5`} > Sorry Error!!</iframe>
+                    <iframe src={projects[active].link} className={`hidden sm:block w-[400px] h-[600px] border-2 ${isLight ? "border-black" : "border-white"} rounded-xl mb-5`} >Sorry Error!!</iframe>
                 </div>
             </div>
-            <iframe src={projects[active].link} className={`my-10 md:hidden w-screen h-[80vh] border-2 ${isLight ? "border-black" : "border-white"} rounded-xl mb-5`} > Sorry Error!!</iframe>
+            <iframe src={projects[active].link} className={`my-10 md:hidden w-screen h-[600px] border-2 ${isLight ? "border-black" : "border-white"} rounded-xl mb-5`} >Sorry Error!!</iframe>
         </div>
     )
 }
