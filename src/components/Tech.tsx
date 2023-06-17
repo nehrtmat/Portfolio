@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { context } from '../App';
 import { styles } from "../styles";
 import { languages, frameworks } from '../constants';
+import './sphere.scss';
 
 const Tech = () => {
     const { isLight } = useContext(context);
@@ -12,7 +13,7 @@ const Tech = () => {
             <p className={`${styles.sectionSubText} ${isLight ? "text-black-100" : "text-white-100"} font-semibold mt-4`}>Technical Languages</p>
             <div className='flex flex-row flex-wrap justify-center gap-6 md:gap-16 my-10'>
                 {languages.map((language, index) => (
-                    <div key={index} className={`${isLight ? "x1-x2-gradient" : "x3-x4-gradient"} flex items-center justify-center rounded-full p-4`}>
+                    <div key={index} className={`sphere ${isLight ? "x1-x2-gradient" : "x3-x4-gradient"} flex items-center justify-center rounded-full p-4`}>
                         <img title={language.title} src={language.icon} alt={language.title} className={`w-12 h-12 md:w-20 md:h-20 object-contain`}  />
                     </div>
                 ))}
@@ -20,7 +21,7 @@ const Tech = () => {
             <p className={`${styles.sectionSubText} ${isLight ? "text-black-100" : "text-white-100"} font-semibold mt-4`}>Technologies and Frameworks</p>
             <div className='flex flex-row flex-wrap justify-center gap-6 md:gap-16 my-10'>
                 {frameworks.map((framework, index) => (
-                    <div key={index} className={`${isLight ? "x1-x2-gradient" : "x3-x4-gradient"} flex items-center justify-center rounded-full p-4`}>
+                    <div key={index} className={`sphere ${isLight ? "x1-x2-gradient" : "x3-x4-gradient"} flex items-center justify-center rounded-full p-4`}>
                     <img title={framework.title} src={framework.icon} alt={framework.title} className={`w-12 h-12 md:w-20 md:h-20 object-contain`}  />
                 </div>
                 ))}
