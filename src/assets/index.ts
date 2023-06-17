@@ -28,8 +28,7 @@ import springboot from './tech/springboot.png';
 import leetcodeLight from './social/leetcodeLight.svg';
 import leetcodeDark from './social/leetcodeDark.svg';
 import linkedin from './social/linkedin.svg';
-import githubLight from './social/githubLight.svg';
-import githubDark from './social/githubDark.svg';
+import github from './social/github.svg';
 import gmail from './social/gmail.svg';
 
 import aws from './skills/aws.png';
@@ -67,8 +66,7 @@ export {
   leetcodeLight,
   leetcodeDark,
   linkedin,
-  githubLight,
-  githubDark,
+  github,
   gmail,
   aws,
   backend,

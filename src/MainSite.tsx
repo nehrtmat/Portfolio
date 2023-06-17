@@ -6,7 +6,7 @@ const MainSite = () => {
     const { isLight } = useContext(context);
 
     return (
-        <div className={`${isLight ? "bg-primary-light" : "bg-primary-dark"}`}>
+        <div className={`${isLight ? "bg-white" : "bg-black"}`}>
             <Navbar />
             <Hero />
             <About />
