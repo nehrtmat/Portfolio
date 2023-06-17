@@ -1,8 +1,6 @@
 import logo from "./logo.svg";
-import menudark from "./menudark.svg";
-import menulight from "./menulight.svg";
-import closedark from "./closedark.svg";
-import closelight from "./closelight.svg";
+import menu from "./menu.svg";
+import close from "./close.svg";
 import comp from "./comp.png";
 import download from "./download.svg";
 import dropdown from "./dropdown.svg";
@@ -39,10 +37,8 @@ import frontend from './skills/frontend.png';
 
 export {
   logo,
-  menulight,
-  menudark,
-  closedark,
-  closelight,
+  menu,
+  close,
   comp,
   download,
   dropdown,
