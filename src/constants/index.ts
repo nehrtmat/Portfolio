@@ -36,7 +36,8 @@ export const projects = [
     {
         title: 'Portfolio', 
         description: 'My humble portfolio website', 
-        link: 'https://aayush65.com',
+        // link: 'https://aayush65.com',
+        link: 'http://localhost:5173/',
         source: "https://github.com/Aayush65/Portfolio"
     },
     {
@@ -53,7 +54,7 @@ export const projects = [
     },
     {
         title: 'Sudoku', 
-        description: 'A Sudoku Website. This website can generate all levels of unfilled sudokus to play with alongwith the ability to complete any possible unfilled sudoku. It also helps the player along the way by highlighting possible conflicts while cell filling.', 
+        description: 'A Sudoku Website which can generate all levels of unfilled sudokus to play with alongwith the ability to complete any possible unfilled sudoku. It also helps the player along the way by highlighting possible conflicts while cell filling.', 
         link: 'https://sudoku.aayush65.com',
         source: "https://github.com/Aayush65/sudoku"
     },

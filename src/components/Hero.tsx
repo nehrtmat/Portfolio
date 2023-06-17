@@ -9,8 +9,9 @@ const Hero = () => {
     const { isLight } = useContext(context);
 
     return (
-        <section className='relative w-full h-screen mx-auto'>
-			<div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex items-start justify-between`}>
+        <div className={`relative z-0 ${isLight ? "bg-hero-pattern-light" : "bg-hero-pattern-dark"} bg-cover bg-no-repeat bg-center`} >
+			<div className={`absolute inset-0 bg-gradient-to-b from-transparent from-60% ${isLight ? "to-primary-light" : "to-primary-dark"}`}></div>
+			<section className={`relative w-full h-screen mx-auto ${styles.paddingX} pt-[120px] max-w-7xl mx-auto flex items-start justify-between`}>
 				<div className='flex flex-col md:flex-row justify-between items-center mt-5 gap-3'>
 					<div className='flex flex-col gap-3 md:gap-5'>
 						<h1 className={`${styles.heroHeadText} ${isLight ? "text-black-100" : "text-white-100"}`}>Hi, I am <span className="text-[#2548e3]">Aayush.</span></h1>
@@ -26,8 +27,8 @@ const Hero = () => {
 					</div>
 					<img src={comp} alt="Working Man" className='pointer-events-none' />
 				</div>
-			</div>
-		</section>
+			</section>
+		</div>
     )
 }
 

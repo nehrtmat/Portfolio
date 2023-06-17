@@ -4,6 +4,7 @@ import Resume from './Resume';
 import About from './About';
 import Tech from './Tech';
 import Projects from './Projects';
+import Footer from './Footer';
 
 export {
   Hero,
@@ -12,4 +13,5 @@ export {
   About,
   Tech,
   Projects,
+  Footer
 }

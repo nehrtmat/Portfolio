@@ -5,6 +5,7 @@ import closedark from "./closedark.svg";
 import closelight from "./closelight.svg";
 import comp from "./comp.png";
 import download from "./download.svg";
+import dropdown from "./dropdown.svg";
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
@@ -45,6 +46,7 @@ export {
   closelight,
   comp,
   download,
+  dropdown,
   springboot,
   python,
   cpp,
