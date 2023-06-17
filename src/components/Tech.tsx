@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { context } from '../App';
 import { styles } from "../styles";
 import { languages, frameworks } from '../constants';
-import './sphere.scss';
+import './sphere.css';
 
 const Tech = () => {
     const { isLight } = useContext(context);
