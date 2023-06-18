@@ -11,7 +11,7 @@ const Hero = () => {
     return (
         <div className={`z-0 ${isLight ? "bg-hero-pattern-light" : "bg-hero-pattern-dark"} bg-cover bg-no-repeat bg-center`} >
 			<div className={`absolute inset-0 bg-gradient-to-b from-transparent from-60% ${isLight ? "to-white" : "to-black"}`}></div>
-			<section className={`relative w-full h-screen mx-auto ${styles.paddingX} pt-[120px] max-w-7xl mx-auto flex items-start justify-between`}>
+			<section className={`relative shrink-0 w-full h-screen mx-auto ${styles.paddingX} pt-[120px] max-w-7xl mx-auto flex items-start justify-between`}>
 				<div className='flex flex-col md:flex-row justify-between items-center mt-5 gap-3'>
 					<div className='flex flex-col gap-3 md:gap-5'>
 						<h1 className={`${styles.heroHeadText} ${isLight ? "text-black-100" : "text-white-100"}`}>Hi, I am <span className="text-[#2548e3]">Aayush.</span></h1>
@@ -22,10 +22,12 @@ const Hero = () => {
 							<a href='https://github.com/Aayush65' target='__blank'><img src={github} alt="github" className={`${isLight ? '' : "invert"} w-7 md:w-10 hover:scale-105`} /></a>
 							<a href='mailto:cdtaayushgupta@gmail.com' target='__blank'><img src={gmail} alt="gmail" className='w-7 md:w-10 hover:scale-105' /></a>
 						</div>
-						<p className={`${styles.heroSubText} font-mono ${isLight ? "text-black-200" : "text-white-100"} mt-2`}>I am a&emsp;
-						<Typewriter words={['Full Stack Developer.', 'LeetCode enthusiast.', 'Software Engineer.', 'AWS Solutions Architect.']} loop={5} cursor cursorStyle='_' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} /></p>
+						<p className={`${styles.heroSubText} ${isLight ? "text-black-200" : "text-white-100"} mt-2`}>I am a 
+						<span className='text-secondary-light'>
+							<Typewriter words={[' Full Stack Developer.', ' LeetCode enthusiast.', ' Software Engineer.', ' AWS Solutions Architect.']} loop={0} cursor cursorStyle='_' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
+						</span></p>
 					</div>
-					<img src={comp} alt="Working Man" className='pointer-events-none' />
+					<img src={comp} alt="Working Man" className='pointer-events-none landscape:hidden' />
 				</div>
 			</section>
 		</div>
