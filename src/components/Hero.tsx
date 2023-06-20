@@ -27,7 +27,7 @@ const Hero = () => {
 							<Typewriter words={[' Full Stack Developer.', ' LeetCode enthusiast.', ' Software Engineer.', ' AWS Solutions Architect.']} loop={0} cursor cursorStyle='_' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
 						</span></p>
 					</div>
-					<img src={comp} alt="Working Man" className='pointer-events-none landscape:hidden' />
+					<img src={comp} alt="Working Man" className='pointer-events-none' />
 				</div>
 			</section>
 		</div>
