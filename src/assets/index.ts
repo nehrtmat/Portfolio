@@ -4,6 +4,7 @@ import close from "./close.svg";
 import comp from "./comp.png";
 import download from "./download.svg";
 import dropdown from "./dropdown.svg";
+import popout from "./popout.svg";
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
@@ -43,6 +44,7 @@ export {
   comp,
   download,
   dropdown,
+  popout,
   springboot,
   python,
   cpp,
