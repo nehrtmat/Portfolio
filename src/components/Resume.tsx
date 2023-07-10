@@ -30,7 +30,7 @@ const Resume = () => {
     }
 
     return (
-        <div className={`${ isLight ? "bg-hero-pattern-light" : "bg-hero-pattern-dark" } bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center h-screen md:h-full`}>
+        <div className={`${ isLight ? "bg-hero-pattern-light" : "bg-hero-pattern-dark" } bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center min-h-screen md:h-full`}>
             <Navbar />
             <div className='relative mt-24'>
                 <iframe className='w-[355px] h-[500px] md:w-[826px] md:h-[1160px] rounded-xl' src={link}></iframe>

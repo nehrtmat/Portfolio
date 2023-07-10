@@ -6,7 +6,7 @@ import { dropdown, github, popout } from "../assets";
 
 const Projects = () => {
     const { isLight } = useContext(context);
-    const [ active, setActive ] = useState<number>(0); 
+    const [ active, setActive ] = useState<number>(1); 
 
     return (
         <div id="projects" className="mt-4">
@@ -14,9 +14,9 @@ const Projects = () => {
                 <p className={`${styles.sectionSubText} ${isLight ? "text-black-200" : "text-white-100" } mt-10 font-semibold`}>What I made</p>
                 <h2 className={`${styles.sectionHeadText} ${isLight ? "text-black-100" : "text-white-100"} mb-16`}>Projects.</h2>
                 <div className='flex justify-between items-center gap-10 w-full'>
-                    <div className={`p-4 ${isLight ? "border-black" : "border-white"} w-full md:w-1/2`}>
+                    <div className={`md:p-4 ${isLight ? "border-black" : "border-white"} w-full md:w-1/2`}>
                         {projects.map((project, index) => (
-                            <div key={index} className={`p-4 rounded-xl border-2 ${isLight ? "border-black" : "border-white"} flex flex-col items-start justify-center ${active === index ? "" : "hover:cursor-pointer"} gap-6 p-6 w-full`} onClick={() => setActive(index)}>
+                            <div key={index} className={`p-6 rounded-xl border-2 ${isLight ? "border-black" : "border-white"} flex flex-col items-start justify-center ${active === index ? "" : "hover:cursor-pointer"} gap-6 w-full`} onClick={() => setActive(index)}>
                                 <div className='flex justify-between items-center w-full'>
                                     <h3 className={`${styles.sectionSubText} ${isLight ? "text-black-200" : "text-white-100" } text-lg md:text-xl font-semibold`}>{project.title}</h3>
                                     <img src={dropdown} alt="dropdown" className={`w-8 h-8 md:w-10 md:h-10 ${isLight ? "" : "invert"} ${active === index ? "hidden" : ""}`} />

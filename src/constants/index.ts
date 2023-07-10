@@ -10,27 +10,27 @@ export const skills = [
 ];
 
 export const frameworks = [
-    {title: 'React', icon: reactjs }, 
-    {title: 'Node.js', icon: nodejs }, 
-    {title: 'TypeScript', icon: typescript }, 
-    {title: 'Tailwind', icon: tailwind }, 
-    {title: 'Django', icon: django }, 
-    {title: 'Docker', icon: docker }, 
-    {title: 'Spring Boot', icon: springboot }, 
-    {title: 'Git', icon: git }
+    {title: 'React', icon: reactjs, invert: false }, 
+    {title: 'Node.js', icon: nodejs, invert: true }, 
+    {title: 'TypeScript', icon: typescript, invert: false }, 
+    {title: 'Tailwind', icon: tailwind, invert: false }, 
+    {title: 'Django', icon: django, invert: true }, 
+    {title: 'Docker', icon: docker, invert: false }, 
+    {title: 'Spring Boot', icon: springboot, invert: false }, 
+    {title: 'Git', icon: git, invert: false }
 ]
 
 export const languages = [
-    {title: 'Python', icon: python }, 
-    {title: 'C++', icon: cpp }, 
-    {title: 'C', icon: c }, 
-    {title: 'Java', icon: java }, 
-    {title: 'HTML', icon: html }, 
-    {title: 'CSS', icon: css }, 
-    {title: 'Javascript', icon: javascript }, 
-    {title: 'SQL', icon: sql }, 
-    {title: 'MongoDB', icon: mongodb },
-    {title: 'Redis', icon: redis }
+    {title: 'Python', icon: python, invert: false }, 
+    {title: 'C++', icon: cpp, invert: false }, 
+    {title: 'C', icon: c, invert: false }, 
+    {title: 'Java', icon: java, invert: false }, 
+    {title: 'HTML', icon: html, invert: false }, 
+    {title: 'CSS', icon: css, invert: false }, 
+    {title: 'Javascript', icon: javascript, invert: false }, 
+    {title: 'SQL', icon: sql, invert: true }, 
+    {title: 'MongoDB', icon: mongodb, invert: false },
+    {title: 'Redis', icon: redis, invert: false }
 ];
 
 export const projects = [
