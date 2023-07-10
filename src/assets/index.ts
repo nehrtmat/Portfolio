@@ -12,7 +12,7 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
+import docker from './tech/docker.png'
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import c from './tech/c.png';
@@ -22,6 +22,7 @@ import java from './tech/java.png';
 import sql from './tech/sql.png';
 import django from './tech/django.png';
 import springboot from './tech/springboot.png';
+import redis from './tech/redis.png'
 
 import leetcodeLight from './social/leetcodeLight.svg';
 import leetcodeDark from './social/leetcodeDark.svg';
@@ -56,9 +57,10 @@ export {
   mongodb,
   nodejs,
   reactjs,
-  redux,
+  docker,
   tailwind,
   typescript,
+  redis,
   leetcodeLight,
   leetcodeDark,
   linkedin,

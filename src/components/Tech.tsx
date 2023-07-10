@@ -14,7 +14,7 @@ const Tech = () => {
             <div className='flex flex-row flex-wrap justify-center gap-6 md:gap-16 my-10'>
                 {languages.map((language, index) => (
                     <div key={index} className={`sphere ${isLight ? "mud-gradient" : "invert"} flex items-center justify-center rounded-full p-4`}>
-                        <img title={language.title} src={language.icon} alt={language.title} className={`w-12 h-12 md:w-20 md:h-20 object-contain`}  />
+                        <img title={language.title} src={language.icon} alt={language.title} className={`hover:animate-spin w-12 h-12 md:w-20 md:h-20 object-contain`}  />
                     </div>
                 ))}
             </div>
@@ -22,7 +22,7 @@ const Tech = () => {
             <div className='flex flex-row flex-wrap justify-center gap-6 md:gap-16 my-10'>
                 {frameworks.map((framework, index) => (
                     <div key={index} className={`sphere ${isLight ? "mud-gradient" : "invert"} flex items-center justify-center rounded-full p-4`}>
-                    <img title={framework.title} src={framework.icon} alt={framework.title} className={`w-12 h-12 md:w-20 md:h-20 object-contain`}  />
+                    <img title={framework.title} src={framework.icon} alt={framework.title} className={`hover:animate-spin w-12 h-12 md:w-20 md:h-20 object-contain`}  />
                 </div>
                 ))}
             </div>

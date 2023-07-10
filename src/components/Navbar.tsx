@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { styles } from '../styles';
 import { logo, menu, close } from '../assets';
 import { context } from '../App';
@@ -9,6 +9,8 @@ const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
 	const { isLight, setIsLight } = useContext(context);
     const navLinks = ["About", "Skills", "Projects"];
+
+	const navigate = useNavigate();
 
 	return (
 		<nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${ isLight ? "bg-white" : "bg-black" } bg-opacity-60 backdrop-blur`}>
@@ -29,7 +31,11 @@ const Navbar = () => {
 				<ul className='list-none hidden sm:flex flex-row gap-10 justify-center items-center'>
 					{navLinks.map((link, linkIdx) => (
 						<li key={linkIdx} className={`${active === link && isLight ? `text-secondary-light`: active === link ? `text-secondary-dark`: isLight ? `text-black-100`: `text-white-100`} hover:opacity-75 text-[18px] font-medium cursor-pointer`}
-							onClick={() => setActive(link)}>
+							onClick={() => {
+								if (window.location.pathname !== '/') 
+            						navigate('/');
+								setActive(link);
+							}}>
 							<a href={`#${link.toLowerCase()}`}>{link}</a>
 						</li>
 					))}
