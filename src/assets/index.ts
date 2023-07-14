@@ -36,6 +36,9 @@ import backend from './skills/backend.png';
 import cp from './skills/cp.png';
 import frontend from './skills/frontend.png';
 
+import leethub from './projects/leethub.png';
+import linkedList from './projects/LinkedList.jpg';
+import binaryTrees from './projects/BinaryTrees.jpg'
 
 export {
   logo,
@@ -72,4 +75,7 @@ export {
   backend,
   cp,
   frontend,
+  leethub,
+  linkedList,
+  binaryTrees,
 };

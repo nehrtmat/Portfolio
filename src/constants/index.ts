@@ -1,6 +1,7 @@
-import { aws, backend, cp, docker, frontend, redis } from '../assets';
+import { aws, backend, binaryTrees, cp, docker, frontend, leethub, linkedList, redis } from '../assets';
 import { springboot, python, cpp, c, java, sql, django, css, git, html, javascript, mongodb, nodejs, reactjs, tailwind, typescript, } from '../assets';
 
+export const aboutMe = "I am a Full Stack Developer with experience in MERN stack having made stateful and stateless websites alongwith working on Chrome Extensions, Django, REST APIs, etc. I am also familiar with both SQL and NoSQL database query languages.\nI am a passionate competitive coder boasting a Knight badge and a top rating of 1980 on LeetCode with 1000+ questions and streak of almost an year."
 
 export const skills = [
     {title: "Competitive Programmer", icon: cp}, 
@@ -33,7 +34,7 @@ export const languages = [
     {title: 'Redis', icon: redis, invert: false }
 ];
 
-export const projects = [
+export const websites = [
     {
         title: 'VIT Grievance Portal', 
         description: 'A website designed to give students a platform to raise their concerns, problems and doubts to the college administration and authorities. This includes separate pages for students, teachers and admins.', 
@@ -43,14 +44,14 @@ export const projects = [
     },
     {
         title: 'Flip Game', 
-        description: 'A Memory based Game made up of fliped tiles which has some image on their rear side. One has to match cards bearing identical images with least amount of flips to win the game.', 
+        description: 'A Memory based Game made up of fliped tiles which has some image on their rear side. One has to match cards bearing identical images with least amount of flips to win the game. Also integrated with a real-time leaderboard.', 
         stack: [reactjs, tailwind, typescript, nodejs, mongodb],
         link: 'https://flipgame.aayush65.com',
         source: "https://github.com/Aayush65/flipgame"
     },
     {
         title: 'Wordle2', 
-        description: "A game inspired by the NYT's Wordle Game",
+        description: "A game inspired by the NYT's Wordle Game. You can show your command of English vocabulary and also learn in this game.",
         stack: [reactjs, tailwind, typescript],
         link: 'https://wordle2.aayush65.com',
         source: "https://github.com/Aayush65/Wordle2"
@@ -69,4 +70,29 @@ export const projects = [
         link: 'https://aayush65.com',
         source: "https://github.com/Aayush65/Portfolio"
     },
+]
+
+export const projects = [
+    {
+        title: "LeetHub 2.0",
+        description: "A Chrome extension to streamline the process of uploading accurately solved LeetCode solutions to a personal GitHub repository, complete with appropriate naming and documentation. Also enhances the representation of a user's LeetCode achievements on GitHub and the visual appearance of GitHub's heatmap.",
+        stack: [javascript, html, css, git],
+        source: "https://github.com/Aayush65/LeetHub2",
+        media: leethub
+    },
+    {
+        title: "Binary Trees Module",
+        description: "A Python module containing Binary Tree implementation and all the functions necessary for its operations and implementation.",
+        stack: [python],
+        source: "https://github.com/Aayush65/BinaryTreesModule",
+        media: binaryTrees
+    },
+    {
+        title: "Linked List Module",
+        description: "This Python module contains 12 important and best space and time-efficient functions for dealing with Linked Lists.",
+        stack: [python],
+        source: "https://github.com/Aayush65/LinkedListModule",
+        media: linkedList
+    },
+
 ]

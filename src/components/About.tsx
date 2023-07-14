@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { styles } from "../styles";
 import { context } from "../App";
-import { skills } from '../constants';
+import { aboutMe, skills } from '../constants';
 import Tilt from 'react-parallax-tilt';
 
 interface SkillCardProps {
@@ -28,7 +28,7 @@ const About = () => {
             <p className={`${styles.sectionSubText} ${isLight ? "text-black-200" : "text-white-100" } mt-10 font-semibold`}>About Me</p>
             <h2 className={`${styles.sectionHeadText} ${isLight ? "text-black-200" : "text-white-100" }`}>Introduction.</h2>
             <div className={`${isLight ? "text-secondary-text-light" : "text-secondary-dark" } text-[17px] max-w-3xl leading-[30px] md:ml-3`}>
-                I am a Full Stack Developer with experience in MERN stack alongwith working on Chrome Extensions, Django, Redux, REST APIs, etc. I am also familiar with many database query languages including both SQL and NoSQL. <br/> I am a passionate competitive coder boasting a Knight badge and a rating of 1980 on LeetCode with 1000+ questions and streak of almost an year.
+                {aboutMe}
             </div>
             <p className={`mt-20 mb-5 sm:mb-0 sm:invisible ${isLight ? "text-secondary-text-light" : "text-secondary-dark" } text-[17px] max-w-3xl leading-[30px] md:ml-3 italic`}>(Tilt your phone to see some magic)</p>
 			<div className='mb-20 flex flex-wrap gap-10'>
