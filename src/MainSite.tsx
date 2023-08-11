@@ -11,8 +11,8 @@ const MainSite = () => {
             <Hero />
             <About />
             <Tech />
-            <Projects />
             <Websites />
+            <Projects />
             <Footer />
         </div>
     )

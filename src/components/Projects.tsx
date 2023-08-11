@@ -11,7 +11,6 @@ const Projects = () => {
 
     return (
         <div id="projects" className={`mt-4 ${styles.paddingX} max-w-7xl mx-auto flex flex-col items-start justify-between`}>
-            <p className={`${styles.sectionSubText} ${isLight ? "text-black-200" : "text-white-100" } mt-10 font-semibold`}>What I made</p>
             <h2 className={`${styles.sectionHeadText} ${isLight ? "text-black-100" : "text-white-100"} mb-16`}>Projects.</h2>
             <div className='flex flex-col justify-between items-start gap-5 w-full mb-10 md:p-4'>
                 {projects.map((project, index) => (

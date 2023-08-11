@@ -6,12 +6,13 @@ import { dropdown, github, popout } from "../assets";
 
 const Websites = () => {
     const { isLight } = useContext(context);
-    const [ active, setActive ] = useState<number>(1); 
+    const [ active, setActive ] = useState<number>(2); 
 
     return (
         <div id="websites" className="mt-4 max-w-7xl mx-auto flex flex-col items-center justify-center">
             <div className={`${styles.paddingX} w-full flex flex-col items-start justify-between`}>
-                <h2 className={`${styles.sectionHeadText} ${isLight ? "text-black-100" : "text-white-100"} mt-10 mb-16`}>Websites.</h2>
+                <p className={`${styles.sectionSubText} ${isLight ? "text-black-200" : "text-white-100" } mt-10 font-semibold`}>What I made</p>
+                <h2 className={`${styles.sectionHeadText} ${isLight ? "text-black-100" : "text-white-100"} mb-16`}>Websites.</h2>
                 <div className='flex justify-between items-center gap-10 w-full mb-10 md:p-4'>
                     <div className={`md:p-4 ${isLight ? "border-black" : "border-white"} w-full md:w-1/2`}>
                         {websites.map((website, index) => (
