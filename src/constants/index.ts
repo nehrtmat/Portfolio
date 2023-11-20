@@ -1,6 +1,8 @@
 import { aws, backend, binaryTrees, cp, docker, dsakit, frontend, leethub, linkedList, redis } from '../assets';
 import { springboot, python, cpp, c, java, sql, django, css, git, html, javascript, mongodb, nodejs, reactjs, tailwind, typescript, } from '../assets';
 
+export const resumeLink = "https://drive.google.com/file/d/1x4-tvVjyN37nGlHNsDJz0ckmpLMkyhI3/preview";
+
 export const aboutMe = "I am a Full Stack Developer with experience in MERN stack having made stateful and stateless websites alongwith working on Chrome Extensions, Django, REST APIs, etc. I am also familiar with both SQL and NoSQL database query languages.\nI am a passionate competitive coder boasting a Knight badge and a top rating of 1980 on LeetCode with 1000+ questions and streak of almost an year."
 
 export const skills = [
@@ -43,11 +45,11 @@ export const websites = [
         source: "https://github.com/Aayush65/Grievance-Portal"
     },
     {
-        title: 'Crypto Watch', 
-        description: 'A Crypto tracking website integrated with a price drop alert system and real-time data. It also enhances the visualisation of price trends with the help of real-time graphical illustrations. Some of the features include data persistency, price drop/rise alert system and watchlist tracking.', 
+        title: 'Crypto Trend', 
+        description: 'A Cryptocurrency tracking website integrated with a price drop alert system and real-time data. It also enhances the visualisation of price trends with the help of real-time graphical trends. Some of the features include data persistency, price drop/rise alert system and watchlist tracking.', 
         stack: [reactjs, tailwind, typescript, nodejs, mongodb],
-        link: 'https://cryptowatch.aayush65.com',
-        source: "https://github.com/Aayush65/CryptoWatch"
+        link: 'https://cryptotrend.aayush65.com',
+        source: "https://github.com/Aayush65/CryptoTrend"
     },
     {
         title: 'Flip Game', 
@@ -82,7 +84,7 @@ export const websites = [
 export const projects = [
     {
         title: "DSA Kit",
-        description: "DSA Kit is a comprehensive collection of Python modules that implement various data structures and algorithms from scratch. The primary goal of this project is to provide efficient and well-optimized implementations of fundamental data structures and algorithms.",
+        description: "DSA Kit is a comprehensive collection of Python modules that implement various data structures and algorithms from scratch. The primary goal of this project is to provide efficient and well-optimized implementations of fundamental data structures and algorithms. Some of the data structures include Segment Trees, Linked Lists, Binary Trees, Union Find, etc.",
         stack: [python],
         source: "https://pypi.org/project/dsakit/",
         media: dsakit
