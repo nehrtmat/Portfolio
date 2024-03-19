@@ -3,7 +3,7 @@ import { springboot, python, cpp, c, java, sql, django, css, git, html, javascri
 
 export const resumeLink = "https://drive.google.com/file/d/1x4-tvVjyN37nGlHNsDJz0ckmpLMkyhI3/preview";
 
-export const aboutMe = "I am a Full Stack Developer with experience in MERN stack having made stateful and stateless websites alongwith working on Chrome Extensions, Django, REST APIs, etc. I am also familiar with both SQL and NoSQL database query languages.\nI am a passionate competitive coder boasting a Knight badge and a top rating of 1980 on LeetCode with 1000+ questions and streak of almost an year."
+export const aboutMe = "Hello, I'm Aayush, a dedicated Full Stack Engineer at Listed (OpeninApp), thriving in the dynamic startup environment. My journey here has been incredibly rewarding, allowing me to take ownership of projects and experience rapid professional growth through continuous learning.\nDriven by a passion for problem-solving and Leetcoding, I've achieved a Guardian badge (2187 rating) and represented my college at the ICPC 2023 Regionals. With over 550 days of consistent practice on LeetCode, I'm deeply committed to refining my skills and optimizing solutions.\nMy curiosity for exploring new technologies has led me to diverse projects, including crafting Chrome extensions, developing Python modules, and creating engaging web app games and full-stack applications. Each project presents a unique opportunity for me to expand my technical repertoire and push the boundaries of innovation.\nLet's connect and explore opportunities to collaborate on exciting ventures together!"
 
 export const skills = [
     {title: "Competitive Programmer", icon: cp}, 
@@ -15,7 +15,6 @@ export const skills = [
 export const frameworks = [
     {title: 'React', icon: reactjs, invert: false }, 
     {title: 'Node.js', icon: nodejs, invert: true }, 
-    {title: 'TypeScript', icon: typescript, invert: false }, 
     {title: 'Tailwind', icon: tailwind, invert: false }, 
     {title: 'Django', icon: django, invert: true }, 
     {title: 'Docker', icon: docker, invert: false }, 
@@ -31,6 +30,7 @@ export const languages = [
     {title: 'HTML', icon: html, invert: false }, 
     {title: 'CSS', icon: css, invert: false }, 
     {title: 'Javascript', icon: javascript, invert: false }, 
+    {title: 'TypeScript', icon: typescript, invert: false }, 
     {title: 'SQL', icon: sql, invert: true }, 
     {title: 'MongoDB', icon: mongodb, invert: false },
     {title: 'Redis', icon: redis, invert: false }
