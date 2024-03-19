@@ -32,7 +32,7 @@ const About = () => {
                     <p key={index}>&nbsp;&nbsp;&nbsp;{para}</p>
                 ))}
             </div>
-            {/* <p className={`mt-20 mb-5 sm:mb-0 sm:invisible ${isLight ? "text-secondary-text-light" : "text-secondary-dark" } text-[17px] max-w-3xl leading-[30px] md:ml-3 italic`}>(Tilt your phone to see some magic)</p> */}
+            <p className={`mt-20 mb-5 sm:mb-0 invisible ${isLight ? "text-secondary-text-light" : "text-secondary-dark" } text-[17px] max-w-3xl leading-[30px] md:ml-3 italic`}>(Tilt your phone to see some magic)</p>
 			<div className='mb-20 flex flex-wrap gap-10'>
 				{skills.map((skill, index) => (
 					<SkillCard key={index} title={skill.title} icon={skill.icon} />
