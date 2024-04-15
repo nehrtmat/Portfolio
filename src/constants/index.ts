@@ -1,4 +1,4 @@
-import { aws, backend, binaryTrees, cp, docker, dsakit, frontend, leethub, linkedList, redis } from '../assets';
+import { aws, backend, binaryTrees, cp, docker, dsakit, frontend, kafka, leethub, linkedList, redis } from '../assets';
 import { springboot, python, cpp, c, java, sql, django, css, git, html, javascript, mongodb, nodejs, reactjs, tailwind, typescript, } from '../assets';
 
 export const resumeLink = "https://drive.google.com/file/d/1x4-tvVjyN37nGlHNsDJz0ckmpLMkyhI3/preview";
@@ -9,7 +9,7 @@ export const skills = [
     {title: "Competitive Programmer", icon: cp}, 
     {title: "FrontEnd Developer", icon: frontend}, 
     {title: "Backend Developer", icon: backend}, 
-    {title: "AWS Solutions Architect", icon: aws}
+    // {title: "AWS Solutions Architect", icon: aws}
 ];
 
 export const frameworks = [
@@ -17,16 +17,17 @@ export const frameworks = [
     {title: 'Node.js', icon: nodejs, invert: true }, 
     {title: 'Tailwind', icon: tailwind, invert: false }, 
     {title: 'Django', icon: django, invert: true }, 
+    {title: 'Git', icon: git, invert: false },
     {title: 'Docker', icon: docker, invert: false }, 
-    {title: 'Spring Boot', icon: springboot, invert: false }, 
-    {title: 'Git', icon: git, invert: false }
+    {title: 'Kafka', icon: kafka, invert: true }, 
+    // {title: 'Spring Boot', icon: springboot, invert: false }, 
 ]
 
 export const languages = [
     {title: 'Python', icon: python, invert: false }, 
-    {title: 'C++', icon: cpp, invert: false }, 
-    {title: 'C', icon: c, invert: false }, 
-    {title: 'Java', icon: java, invert: false }, 
+    // {title: 'C++', icon: cpp, invert: false }, 
+    // {title: 'C', icon: c, invert: false }, 
+    // {title: 'Java', icon: java, invert: false }, 
     {title: 'HTML', icon: html, invert: false }, 
     {title: 'CSS', icon: css, invert: false }, 
     {title: 'Javascript', icon: javascript, invert: false }, 

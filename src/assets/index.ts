@@ -23,7 +23,8 @@ import java from './tech/java.png';
 import sql from './tech/sql.png';
 import django from './tech/django.png';
 import springboot from './tech/springboot.png';
-import redis from './tech/redis.png'
+import redis from './tech/redis.png';
+import kafka from './tech/kafka.png';
 
 import leetcodeLight from './social/leetcodeLight.svg';
 import leetcodeDark from './social/leetcodeDark.svg';
@@ -67,6 +68,7 @@ export {
   tailwind,
   typescript,
   redis,
+  kafka,
   leetcodeLight,
   leetcodeDark,
   linkedin,
