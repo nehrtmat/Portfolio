@@ -1,7 +1,7 @@
 import { backend, binaryTrees, cp, dsakit, frontend, leethub, linkedList } from '../assets';
 import { python, sql, css, git, html, cpp, c, javascript, nodejs, reactjs, tailwind, typescript, wordpress, php } from '../assets';
 
-export const resumeLink = "https://drive.google.com/file/d/1mLJW7yqw2dKSJw6DrYCAOTlbj0hXqGR6/preview";
+export const resumeLink = "https://drive.google.com/file/d/1LTDlbw8PJExIZetEO3OpX5xrE5i2_2Fx/preview";
 
 export const aboutMe = "I am a dedicated and versatile software developer with a passion for crafting exceptional digital experiences. With a background in Computer Science from Michigan State University and hands-on experience at Shumaker Technology Group, I bring a wealth of knowledge in web development, database management, and software architecture. My expertise lies in building robust and user-friendly websites, as showcased in projects like Allendale Township and ASO Michigan, where I led teams to deliver innovative solutions. I thrive in dynamic environments, tackling challenges with creativity and a detail-oriented approach. I am adept at utilizing technologies such as React, TypeScript, and Node.js to create efficient and elegant solutions. My commitment to excellence, coupled with a strong collaborative spirit, enables me to deliver high-quality results that exceed expectations."
 
@@ -82,7 +82,7 @@ export const websites = [
         title: 'Portfolio', 
         description: 'My portfolio website', 
         stack: [reactjs, tailwind, typescript],
-        link: 'https://aayush65.com',
+        link: 'https://matthewnehrt.netlify.app/',
         source: "https://github.com/nehrtmat/Portfolio"
     },
 ]
