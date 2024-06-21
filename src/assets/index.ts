@@ -1,4 +1,6 @@
 import logo from "./logo.svg";
+import logocolor from "./logocolor.svg";
+
 import menu from "./menu.svg";
 import close from "./close.svg";
 import comp from "./comp.png";
@@ -25,6 +27,9 @@ import django from './tech/django.png';
 import springboot from './tech/springboot.png';
 import redis from './tech/redis.png';
 import kafka from './tech/kafka.png';
+import wordpress from './tech/wordpress.png';
+import php from './tech/php.png';
+
 
 import leetcodeLight from './social/leetcodeLight.svg';
 import leetcodeDark from './social/leetcodeDark.svg';
@@ -44,6 +49,7 @@ import dsakit from './projects/dsakit.png';
 
 export {
   logo,
+  logocolor,
   menu,
   close,
   comp,
@@ -82,4 +88,6 @@ export {
   linkedList,
   binaryTrees,
   dsakit,
+  wordpress,
+  php
 };

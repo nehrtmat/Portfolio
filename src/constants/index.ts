@@ -1,58 +1,63 @@
 import { backend, binaryTrees, cp, docker, dsakit, frontend, kafka, leethub, linkedList, redis } from '../assets';
-import { python, sql, django, css, git, html, javascript, mongodb, nodejs, reactjs, tailwind, typescript, } from '../assets';
+import { python, sql, django, css, git, html, cpp, c, javascript, mongodb, nodejs, reactjs, tailwind, typescript, wordpress, php } from '../assets';
 
-export const resumeLink = "https://drive.google.com/file/d/1x4-tvVjyN37nGlHNsDJz0ckmpLMkyhI3/preview";
+export const resumeLink = "https://drive.google.com/file/d/1mLJW7yqw2dKSJw6DrYCAOTlbj0hXqGR6/preview";
 
-export const aboutMe = "Hello, I'm Aayush, a dedicated Full Stack Engineer at Listed (OpeninApp), thriving in the dynamic startup environment. My journey here has been incredibly rewarding, allowing me to take ownership of projects and experience rapid professional growth through continuous learning.\nDriven by a passion for problem-solving and Leetcoding, I've achieved a Guardian badge (2187 rating) and represented my college at the ICPC 2023 Regionals. With over 550 days of consistent practice on LeetCode, I'm deeply committed to refining my skills and optimizing solutions.\nMy curiosity for exploring new technologies has led me to diverse projects, including crafting Chrome extensions, developing Python modules, and creating engaging web app games and full-stack applications. Each project presents a unique opportunity for me to expand my technical repertoire and push the boundaries of innovation.\nLet's connect and explore opportunities to collaborate on exciting ventures together!"
+export const aboutMe = "I am a dedicated and versatile software developer with a passion for crafting exceptional digital experiences. With a background in Computer Science from Michigan State University and hands-on experience at Shumaker Technology Group, I bring a wealth of knowledge in web development, database management, and software architecture. My expertise lies in building robust and user-friendly websites, as showcased in projects like Allendale Township and ASO Michigan, where I led teams to deliver innovative solutions. I thrive in dynamic environments, tackling challenges with creativity and a detail-oriented approach. I am adept at utilizing technologies such as React, TypeScript, and Node.js to create efficient and elegant solutions. My commitment to excellence, coupled with a strong collaborative spirit, enables me to deliver high-quality results that exceed expectations."
 
 export const skills = [
     {title: "Competitive Programmer", icon: cp}, 
     {title: "FrontEnd Developer", icon: frontend}, 
-    {title: "Backend Developer", icon: backend}, 
-    // {title: "AWS Solutions Architect", icon: aws}
+    {title: "Backend Developer", icon: backend}
 ];
 
 export const frameworks = [
+    {title: 'Wordpress', icon: wordpress, invert: false },
     {title: 'React', icon: reactjs, invert: false }, 
-    {title: 'Node.js', icon: nodejs, invert: true }, 
-    {title: 'Tailwind', icon: tailwind, invert: false }, 
-    {title: 'Django', icon: django, invert: true }, 
+    {title: 'Node.js', icon: nodejs, invert: true },
     {title: 'Git', icon: git, invert: false },
-    {title: 'Docker', icon: docker, invert: false }, 
-    {title: 'Kafka', icon: kafka, invert: true }, 
-    // {title: 'Spring Boot', icon: springboot, invert: false }, 
-]
+    {title: 'Tailwind', icon: tailwind, invert: false }
+];
 
 export const languages = [
     {title: 'Python', icon: python, invert: false }, 
-    // {title: 'C++', icon: cpp, invert: false }, 
-    // {title: 'C', icon: c, invert: false }, 
+    {title: 'C++', icon: cpp, invert: false }, 
+    {title: 'C', icon: c, invert: false }, 
     // {title: 'Java', icon: java, invert: false }, 
     {title: 'HTML', icon: html, invert: false }, 
     {title: 'CSS', icon: css, invert: false }, 
     {title: 'Javascript', icon: javascript, invert: false }, 
-    {title: 'TypeScript', icon: typescript, invert: false }, 
-    {title: 'SQL', icon: sql, invert: true }, 
-    {title: 'MongoDB', icon: mongodb, invert: false },
-    {title: 'Redis', icon: redis, invert: false }
+    {title: 'TypeScript', icon: typescript, invert: false },
+    {title: 'PHP', icon: php, invert: true }, 
+    {title: 'SQL', icon: sql, invert: true }
 ];
 
 export const websites = [
     {
-        title: 'VIT Grievance Portal', 
-        description: 'A website designed to give students a platform to raise their concerns, problems and doubts to the college administration and authorities. This includes separate pages for students, teachers and admins.', 
-        stack: [reactjs, tailwind, typescript, nodejs, mongodb, redis],
-        link: 'https://vitb-grievances.aayush65.com',
-        source: "https://github.com/Aayush65/Grievance-Portal"
+        title: 'Michigan Township Association', 
+        description: 'The Michigan Township Association website stands out as a sophisticated platform that leverages cutting-edge software development practices to serve its members effectively. One of its key features is a secure members portal with login functionality, providing exclusive access to valuable resources and tools. The website also demonstrates seamless integration with external systems through its API connection to Impexium, a membership management platform. This integration allows for efficient data exchange, ensuring that member information is up-to-date and synchronized across platforms. Overall, the Michigan Township Association website showcases a high level of software development expertise, offering a seamless and secure digital experience for its members.', 
+        stack: [html, css, javascript, php, sql, wordpress],
+        link: 'https://michigantownships.org/'
     },
     {
-        title: 'Crypto Trend', 
-        description: 'A Cryptocurrency tracking website integrated with a price drop alert system and real-time data. It also enhances the visualisation of price trends with the help of real-time graphical trends. Some of the features include data persistency, price drop/rise alert system and watchlist tracking.', 
-        stack: [reactjs, tailwind, typescript, nodejs, mongodb],
-        link: 'https://cryptotrend.aayush65.com',
-        source: "https://github.com/Aayush65/CryptoTrend"
+        title: 'Shumaker Technology Group', 
+        description: "The Shumaker Technology Group website showcases a high standard of web development, featuring a modern and professional design. Developed with a focus on user engagement, the site offers visitors an immersive experience with its clean layout and intuitive navigation. Behind the scenes, the website is powered by advanced technologies such as React and Node.js, ensuring a fast and responsive performance. It incorporates various elements, including a portfolio showcasing past projects, a blog section for industry insights, and a contact form for business inquiries. The website's use of innovative design principles and cutting-edge technologies demonstrates the company's commitment to delivering top-notch digital solutions. Overall, the Shumaker Technology Group website stands as a testament to excellence in web development, serving as a valuable asset for the company's online presence.", 
+        stack: [html, css, javascript, php, wordpress],
+        link: 'https://www.shumakergroup.com/'
     },
     {
+        title: 'Allendale Charter Township', 
+        description: 'The Allendale Charter Township website represents a pinnacle of modern web development, featuring a robust and user-centric design. Built with a focus on accessibility and ease of use, the site offers residents and visitors a seamless browsing experience. Behind the scenes, the website boasts a well-structured architecture, leveraging technologies such as React and Node.js to deliver dynamic and responsive content. It incorporates a variety of features, including a searchable database for meeting minutes, streamlined forms for permits and licenses, and a visually engaging layout that highlights important township information. Overall, the Allendale Charter Township website showcases excellence in web development, combining functionality with aesthetics to serve the community effectively.', 
+        stack: [html, css, javascript, php, wordpress],
+        link: 'https://allendalemi.gov/'
+    },
+    {
+        title: 'Madison Charter Township', 
+        description: "The Madison Charter Township website exemplifies modern web development practices, featuring a sleek and intuitive design tailored for ease of use. Developed with a strong emphasis on user experience, the site offers residents and visitors a seamless browsing experience across all devices. Behind the scenes, the website utilizes advanced technologies such as React and TypeScript to deliver dynamic and interactive content. It incorporates various functionalities, including a comprehensive news section, an events calendar, and online forms for permits and services. The website's well-organized architecture and efficient codebase contribute to its fast loading times and overall performance. In summary, the Madison Charter Township website demonstrates excellence in web development, providing a valuable resource for the community.", 
+        stack: [html, css, javascript, php, wordpress],
+        link: 'https://madisontwpmi.gov/'
+    },
+    /**{
         title: 'Flip Game', 
         description: 'A Memory based Game made up of fliped tiles which has some image on their rear side. One has to match cards bearing identical images with least amount of flips to win the game. Also integrated with a real-time leaderboard.', 
         stack: [reactjs, tailwind, typescript, nodejs, mongodb],
@@ -72,13 +77,13 @@ export const websites = [
         stack: [reactjs, tailwind, typescript],
         link: 'https://sudoku.aayush65.com',
         source: "https://github.com/Aayush65/sudoku"
-    },
+    },**/
     {
         title: 'Portfolio', 
-        description: 'My humble portfolio website', 
+        description: 'My portfolio website', 
         stack: [reactjs, tailwind, typescript],
         link: 'https://aayush65.com',
-        source: "https://github.com/Aayush65/Portfolio"
+        source: "https://github.com/nehrtmat/Portfolio"
     },
 ]
 

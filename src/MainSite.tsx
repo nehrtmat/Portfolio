@@ -12,7 +12,7 @@ const MainSite = () => {
             <About />
             <Tech />
             <Websites />
-            <Projects />
+           {/* <Projects />*/}
             <Footer />
         </div>
     )
