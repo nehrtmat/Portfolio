@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { styles } from '../styles';
-import { logo, logocolor, menu, close } from '../assets';
+import { logocolor, menu, close } from '../assets';
 import { context } from '../App';
 
 const Navbar = () => {

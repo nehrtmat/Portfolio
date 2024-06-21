@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Navbar, Hero, About, Tech, Websites, Footer, Projects } from './components';
+import { Navbar, Hero, About, Tech, Websites, Footer } from './components';
 import { context } from './App';
 
 const MainSite = () => {

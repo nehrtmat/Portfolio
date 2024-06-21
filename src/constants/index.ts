@@ -1,5 +1,5 @@
-import { backend, binaryTrees, cp, docker, dsakit, frontend, kafka, leethub, linkedList, redis } from '../assets';
-import { python, sql, django, css, git, html, cpp, c, javascript, mongodb, nodejs, reactjs, tailwind, typescript, wordpress, php } from '../assets';
+import { backend, binaryTrees, cp, dsakit, frontend, leethub, linkedList } from '../assets';
+import { python, sql, css, git, html, cpp, c, javascript, nodejs, reactjs, tailwind, typescript, wordpress, php } from '../assets';
 
 export const resumeLink = "https://drive.google.com/file/d/1mLJW7yqw2dKSJw6DrYCAOTlbj0hXqGR6/preview";
 
