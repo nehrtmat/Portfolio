@@ -45,7 +45,7 @@ import frontend from './skills/frontend.png';
 import leethub from './projects/leethub.png';
 import linkedList from './projects/LinkedList.jpg';
 import binaryTrees from './projects/BinaryTrees.jpg';
-import dsakit from './projects/dsakit.png';
+import netflix from './projects/netflix.png';
 
 export {
   logo,
@@ -87,7 +87,7 @@ export {
   leethub,
   linkedList,
   binaryTrees,
-  dsakit,
+  netflix,
   wordpress,
   php
 };

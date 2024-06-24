@@ -1,4 +1,4 @@
-import { backend, binaryTrees, cp, dsakit, frontend, leethub, linkedList } from '../assets';
+import { backend, binaryTrees, cp, netflix, frontend, leethub, linkedList } from '../assets';
 import { python, sql, css, git, html, cpp, c, javascript, nodejs, reactjs, tailwind, typescript, wordpress, php } from '../assets';
 
 export const resumeLink = "https://drive.google.com/file/d/1LTDlbw8PJExIZetEO3OpX5xrE5i2_2Fx/preview";
@@ -89,32 +89,11 @@ export const websites = [
 
 export const projects = [
     {
-        title: "DSA Kit",
-        description: "DSA Kit is a comprehensive collection of Python modules that implement various data structures and algorithms from scratch. The primary goal of this project is to provide efficient and well-optimized implementations of fundamental data structures and algorithms. Some of the data structures include Segment Trees, Linked Lists, Binary Trees, Union Find, etc.",
-        stack: [python],
-        source: "https://pypi.org/project/dsakit/",
-        media: dsakit
-    },
-    {
-        title: "LeetHub 2.0",
-        description: "A Chrome extension to streamline the process of uploading accurately solved LeetCode solutions to a personal GitHub repository, complete with appropriate naming and documentation. Also enhances the representation of a user's LeetCode achievements on GitHub and the visual appearance of GitHub's heatmap.",
-        stack: [javascript, html, css, git],
-        source: "https://github.com/Aayush65/LeetHub2",
-        media: leethub
-    },
-    {
-        title: "Binary Trees Module",
-        description: "A Python module containing Binary Tree implementation and all the functions necessary for its operations and implementation.",
-        stack: [python],
-        source: "https://github.com/Aayush65/BinaryTreesModule",
-        media: binaryTrees
-    },
-    {
-        title: "Linked List Module",
-        description: "This Python module contains 12 important and best space and time-efficient functions for dealing with Linked Lists.",
-        stack: [python],
-        source: "https://github.com/Aayush65/LinkedListModule",
-        media: linkedList
-    },
-
+        title: "Netflix Clone",
+        description: "A clone of the popular streaming service website Netflix. Users can create an account, login, and browse through hundereds or movie titles.",
+        stack: [javascript, html, css, reactjs],
+        source: "https://github.com/nehrtmat/netflix-clone",
+        media: netflix
+    }
+    
 ]

@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Navbar, Hero, About, Tech, Websites, Footer } from './components';
+import { Navbar, Hero, About, Tech, Websites, Footer, Projects } from './components';
 import { context } from './App';
 
 const MainSite = () => {
@@ -12,7 +12,7 @@ const MainSite = () => {
             <About />
             <Tech />
             <Websites />
-           {/* <Projects />*/}
+           <Projects />
             <Footer />
         </div>
     )
