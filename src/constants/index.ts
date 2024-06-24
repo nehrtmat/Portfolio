@@ -1,4 +1,4 @@
-import { backend, binaryTrees, cp, netflix, frontend, leethub, linkedList } from '../assets';
+import { backend, cp, netflix, frontend } from '../assets';
 import { python, sql, css, git, html, cpp, c, javascript, nodejs, reactjs, tailwind, typescript, wordpress, php } from '../assets';
 
 export const resumeLink = "https://drive.google.com/file/d/1LTDlbw8PJExIZetEO3OpX5xrE5i2_2Fx/preview";
