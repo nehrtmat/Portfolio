@@ -44,6 +44,8 @@ import frontend from './skills/frontend.png';
 
 
 import netflix from './projects/netflix.png';
+import toDoList from './projects/Todo-list.png';
+
 
 export {
   logo,
@@ -84,5 +86,6 @@ export {
   frontend,
   netflix,
   wordpress,
-  php
+  php,
+  toDoList
 };

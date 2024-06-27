@@ -1,4 +1,4 @@
-import { backend, cp, netflix, frontend } from '../assets';
+import { backend, cp, netflix, frontend, toDoList } from '../assets';
 import { python, sql, css, git, html, cpp, c, javascript, nodejs, reactjs, tailwind, typescript, wordpress, php } from '../assets';
 
 export const resumeLink = "https://drive.google.com/file/d/1LTDlbw8PJExIZetEO3OpX5xrE5i2_2Fx/preview";
@@ -94,6 +94,13 @@ export const projects = [
         stack: [javascript, html, css, reactjs],
         source: "https://github.com/nehrtmat/netflix-clone",
         media: netflix
+    },    
+    {
+        title: "Todo List",
+        description: "I created a Todo List application that allows users to add, delete, and sort tasks efficiently. This project was an excellent opportunity to learn and implement the principles of CRUD (Create, Read, Update, Delete) operations in a practical, user-friendly web application.",
+        stack: [javascript, html, css, reactjs],
+        source: "https://github.com/nehrtmat/Todo-List",
+        media: toDoList
     }
     
 ]
