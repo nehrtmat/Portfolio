@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { context } from "../App";
 import { styles } from "../styles";
 import { projects } from "../constants";
-import { github } from "../assets";
+import { github, popout } from "../assets";
 
 
 const Projects = () => {
@@ -18,9 +18,16 @@ const Projects = () => {
                         <div className="md:w-2/3 flex flex-col justify-between p-4 gap-5">
                             <header className="flex justify-between items-center">
                                 <h3 className={`${styles.sectionSubText} ${isLight ? "text-black-200" : "text-white-100" } text-[1.05rem]   md:text-xl font-bold`}>{project.title}</h3>
-                                <a href={project.source} target="_blank" >
-                                    <img src={github} alt="githubLink" className={`w-6 h-6 md:w-9 md:h-9 hover:scale-110 ${isLight ? "" : "invert"}`} />
-                                </a>
+                                <div className='flex justify-end items-center gap-3 md:gap-5'>
+                                    {project.link && (
+                                        <a href={project.link} target="_blank" className={``}>
+                                        <img src={popout} alt="websiteLink" className={`w-6 h-6 md:w-8 md:h-8 hover:scale-110 active:scale-[1.2]`} />
+                                        </a>
+                                    )}
+                                    <a href={project.source} target="_blank" className={``}>
+                                        <img src={github} alt="githubLink" className={`w-6 h-6 md:w-8 md:h-8 hover:scale-110`} />
+                                    </a>
+                                </div>
                             </header>
                             <p className={`${isLight ? "text-secondary-text-light" : "text-secondary-dark" } px-2 md:p-2 text-sm md:text-base max-w-1/2 leading-[30px]`}>{project.description}</p>
                             <div className="flex items-center justify-center md:justify-end gap-3">

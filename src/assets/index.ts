@@ -43,8 +43,10 @@ import cp from './skills/cp.png';
 import frontend from './skills/frontend.png';
 
 
-import netflix from './projects/netflix.png';
+import netflixClone from './projects/netflixClone.png';
 import toDoList from './projects/Todo-list.png';
+import workoutTracker from './projects/workoutTracker.png';
+import myPortfolio from './projects/myPortfolio.png';
 
 
 export {
@@ -84,8 +86,10 @@ export {
   backend,
   cp,
   frontend,
-  netflix,
+  netflixClone,
   wordpress,
   php,
-  toDoList
+  toDoList,
+  workoutTracker,
+  myPortfolio
 };

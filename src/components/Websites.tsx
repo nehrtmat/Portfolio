@@ -2,11 +2,11 @@ import { useContext, useState } from 'react';
 import { styles } from "../styles";
 import { context } from "../App";
 import { websites } from '../constants';
-import { dropdown, github, popout } from "../assets";
+import { dropdown, popout } from "../assets";
 
 const Websites = () => {
     const { isLight } = useContext(context);
-    const [ active, setActive ] = useState<number>(2); 
+    const [ active, setActive ] = useState<number>(0); 
 
     return (
         <div id="websites" className="mt-4 max-w-7xl mx-auto flex flex-col items-center justify-center">
@@ -23,9 +23,6 @@ const Websites = () => {
                                     <div className={`flex justify-end items-center gap-3 md:gap-5 ${isLight ? "" : "invert"} ${active === index ? "" : "hidden"}`}>
                                         <a href={website.link} target="_blank" className={``} >
                                             <img src={popout} alt="websiteLink" className={`w-6 h-6 md:w-8 md:h-8 hover:scale-110 active:scale-[1.2]`} />
-                                        </a>
-                                        <a href={website.source} target="_blank" className={``} >
-                                            <img src={github} alt="githubLink" className={`w-6 h-6 md:w-8 md:h-8 hover:scale-110`} />
                                         </a>
                                     </div>
                                 </header>

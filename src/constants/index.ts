@@ -1,7 +1,7 @@
-import { backend, cp, netflix, frontend, toDoList } from '../assets';
+import { backend, cp, netflixClone, frontend, toDoList, workoutTracker, myPortfolio } from '../assets';
 import { python, sql, css, git, html, cpp, c, javascript, nodejs, reactjs, tailwind, typescript, wordpress, php } from '../assets';
 
-export const resumeLink = "https://drive.google.com/file/d/1LTDlbw8PJExIZetEO3OpX5xrE5i2_2Fx/preview";
+export const resumeLink = "https://drive.google.com/file/d/1T-b4nVZkeRKxip9gKYh8lF8sWLib9IDR/preview";
 
 export const aboutMe = "I am a dedicated and versatile software developer with a passion for crafting exceptional digital experiences. With a background in Computer Science from Michigan State University and hands-on experience at Shumaker Technology Group, I bring a wealth of knowledge in web development, database management, and software architecture. My expertise lies in building robust and user-friendly websites, as showcased in projects like Allendale Township and ASO Michigan, where I led teams to deliver innovative solutions. I thrive in dynamic environments, tackling challenges with creativity and a detail-oriented approach. I am adept at utilizing technologies such as React, TypeScript, and Node.js to create efficient and elegant solutions. My commitment to excellence, coupled with a strong collaborative spirit, enables me to deliver high-quality results that exceed expectations."
 
@@ -46,6 +46,12 @@ export const websites = [
         link: 'https://www.shumakergroup.com/'
     },
     {
+        title: 'Client - Joyful Juniper', 
+        description: 'Developed an ecommerce platform using WordPress, PHP, Laravel, and jQuery, creating a seamless shopping experience with custom product pages and dynamic user interactions. Implemented secure payment gateways, user authentication, and real-time inventory management, ensuring smooth transactions and accurate stock updates.', 
+        stack: [html, css, javascript, php, sql, wordpress],
+        link: 'https://juniebox.com/'
+    },
+    {
         title: 'Allendale Charter Township', 
         description: 'The Allendale Charter Township website represents a pinnacle of modern web development, featuring a robust and user-centric design. Built with a focus on accessibility and ease of use, the site offers residents and visitors a seamless browsing experience. Behind the scenes, the website boasts a well-structured architecture, leveraging technologies such as React and Node.js to deliver dynamic and responsive content. It incorporates a variety of features, including a searchable database for meeting minutes, streamlined forms for permits and licenses, and a visually engaging layout that highlights important township information. Overall, the Allendale Charter Township website showcases excellence in web development, combining functionality with aesthetics to serve the community effectively.', 
         stack: [html, css, javascript, php, wordpress],
@@ -78,22 +84,25 @@ export const websites = [
         link: 'https://sudoku.aayush65.com',
         source: "https://github.com/Aayush65/sudoku"
     },**/
-    {
-        title: 'Portfolio', 
-        description: 'My portfolio website', 
-        stack: [reactjs, tailwind, typescript],
-        link: 'https://matthewnehrt.netlify.app/',
-        source: "https://github.com/nehrtmat/Portfolio"
-    },
 ]
 
 export const projects = [
+
+    {
+        title: "Custom Workout Generator",
+        description: "A smart workout generation web app using ReactjS & TailwindCSS for personalized training plans for over 100 weekly users. Using a rule-based algorithm for effective workouts catering to all experience levels and environments. Utilizing LocalStorage API to store and persist user workouts",
+        stack: [javascript, html, css, reactjs],
+        link: 'https://workouttracket.netlify.app/',
+        source: "https://github.com/nehrtmat/workout-tracker",
+        media: workoutTracker
+    },
     {
         title: "Netflix Clone",
-        description: "A clone of the popular streaming service website Netflix. Users can create an account, login, and browse through hundereds or movie titles.",
+        description: "Simplified Netflix web app, including web pages, database & server to process data. Developed a dynamic webpage to to view movies using ReactjS and API request. Implemented secure authentication and sign up with Firebase.",
         stack: [javascript, html, css, reactjs],
+        link: 'https://netflixclonemn.netlify.app/',
         source: "https://github.com/nehrtmat/netflix-clone",
-        media: netflix
+        media: netflixClone
     },    
     {
         title: "Todo List",
@@ -101,6 +110,14 @@ export const projects = [
         stack: [javascript, html, css, reactjs],
         source: "https://github.com/nehrtmat/Todo-List",
         media: toDoList
+    },
+    {
+        title: 'Portfolio', 
+        description: 'My portfolio website', 
+        stack: [reactjs, tailwind, typescript],
+        link: 'https://matthewnehrt.netlify.app/',
+        source: "https://github.com/nehrtmat/Portfolio",
+        media: myPortfolio
     }
     
 ]
