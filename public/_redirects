@@ -1,0 +1,6 @@
+# SPA fallback for Netlify. Without this, /resume is a client side route that
+# only exists after the app boots, so loading, reloading, or sharing that URL
+# returns 404. vercel.json has the equivalent rewrite but Netlify ignores it.
+# Real files in the publish directory (resume.pdf, assets) are served first, so
+# this does not shadow them.
+/*  /index.html  200

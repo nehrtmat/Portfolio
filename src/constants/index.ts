@@ -1,123 +1,191 @@
-import { backend, cp, netflixClone, frontend, toDoList, workoutTracker, myPortfolio } from '../assets';
-import { python, sql, css, git, html, cpp, c, javascript, nodejs, reactjs, tailwind, typescript, wordpress, php } from '../assets';
+import { backend, frontend, aiAutomation, workoutTracker, portfolioPreview } from '../assets';
+import { python, sql, css, git, html, javascript, nodejs, reactjs, tailwind, typescript, wordpress, php, docker } from '../assets';
+import { claude, mcp, n8n, obsidian, openai, notion, cloudflare } from '../assets';
+import { michiganTownshipsShot, shumakerShot, allendaleShot, madisonShot, fiveStarShot, polishedShot, btGoShot } from '../assets';
 
-export const resumeLink = "https://drive.google.com/file/d/1T-b4nVZkeRKxip9gKYh8lF8sWLib9IDR/preview";
+// Served from public/ instead of Google Drive: no third party dependency, and
+// it updates with a deploy rather than a manual upload. Regenerate the PDF from
+// ~/Documents/Resume/matthew-nehrt-resume-ai-engineer.html.
+export const resumeLink = "/resume.pdf";
+export const resumeDownloadLink = "/resume.pdf";
 
-export const aboutMe = "I am a dedicated and versatile software developer with a passion for crafting exceptional digital experiences. With a background in Computer Science from Michigan State University and hands-on experience at Shumaker Technology Group, I bring a wealth of knowledge in web development, database management, and software architecture. My expertise lies in building robust and user-friendly websites, as showcased in projects like Allendale Township and ASO Michigan, where I led teams to deliver innovative solutions. I thrive in dynamic environments, tackling challenges with creativity and a detail-oriented approach. I am adept at utilizing technologies such as React, TypeScript, and Node.js to create efficient and elegant solutions. My commitment to excellence, coupled with a strong collaborative spirit, enables me to deliver high-quality results that exceed expectations."
+export const aboutMe = `I am a software engineer who builds AI systems. Four years of production experience, currently at CareMetx, where I ship features on an enterprise healthcare platform that medical practices use to manage prior authorizations, benefit verifications, and patient enrollments.
+What I care about now is the layer above the code. I design agents, automations, and workflows that take repetitive work off people's plates: agent systems that chain several tools together, MCP integrations, prompt architectures that hold up against real inputs, and pipelines that run start to finish without supervision. I use AI coding agents daily inside a regulated production codebase, which means I have had to build the discipline that goes with them, reviewing every generated change against architecture rules, security requirements, and isolation constraints before it merges.
+Before that I delivered more than 20 custom sites and web applications at Shumaker Technology Group and kept hosting healthy for over 500 client sites. That is where I learned to think in systems instead of scripts, and it is still the foundation under everything I build: React and TypeScript at the front, PHP, Python, SQL, and serverless infrastructure behind it.
+I am looking for a role where building with AI is the job itself rather than a side effect of it.`;
 
 export const skills = [
-    {title: "Competitive Programmer", icon: cp}, 
-    {title: "FrontEnd Developer", icon: frontend}, 
-    {title: "Backend Developer", icon: backend}
+    {title: "AI & Automation", icon: aiAutomation},
+    {title: "Full Stack Web", icon: frontend},
+    {title: "APIs & Integrations", icon: backend}
+];
+
+export const aiStack = [
+    {title: 'Claude / Claude Code', icon: claude, invert: false },
+    {title: 'Model Context Protocol', icon: mcp, invert: true },
+    {title: 'n8n', icon: n8n, invert: false },
+    {title: 'Obsidian', icon: obsidian, invert: false },
+    {title: 'OpenAI / Whisper', icon: openai, invert: true },
+    {title: 'Notion', icon: notion, invert: true }
 ];
 
 export const frameworks = [
-    {title: 'Wordpress', icon: wordpress, invert: false },
-    {title: 'React', icon: reactjs, invert: false }, 
+    {title: 'React', icon: reactjs, invert: false },
     {title: 'Node.js', icon: nodejs, invert: true },
+    {title: 'Tailwind', icon: tailwind, invert: false },
+    {title: 'Cloudflare Workers', icon: cloudflare, invert: false },
+    {title: 'Docker', icon: docker, invert: false },
     {title: 'Git', icon: git, invert: false },
-    {title: 'Tailwind', icon: tailwind, invert: false }
+    {title: 'Wordpress', icon: wordpress, invert: false }
 ];
 
 export const languages = [
-    {title: 'Python', icon: python, invert: false }, 
-    {title: 'C++', icon: cpp, invert: false }, 
-    {title: 'C', icon: c, invert: false }, 
-    // {title: 'Java', icon: java, invert: false }, 
-    {title: 'HTML', icon: html, invert: false }, 
-    {title: 'CSS', icon: css, invert: false }, 
-    {title: 'Javascript', icon: javascript, invert: false }, 
+    {title: 'Python', icon: python, invert: false },
+    {title: 'Javascript', icon: javascript, invert: false },
     {title: 'TypeScript', icon: typescript, invert: false },
-    {title: 'PHP', icon: php, invert: true }, 
-    {title: 'SQL', icon: sql, invert: true }
+    {title: 'PHP', icon: php, invert: true },
+    {title: 'SQL', icon: sql, invert: true },
+    {title: 'HTML', icon: html, invert: false },
+    {title: 'CSS', icon: css, invert: false }
+];
+
+/**
+ * AI and automation systems. `status` is deliberate: it separates what runs
+ * every day from what exists as design work, so nothing on the page overstates
+ * itself.
+ */
+export const aiProjects = [
+    {
+        title: "AIS-OS, a personal AI operating system",
+        status: "Running daily",
+        summary: "An agent based operating layer built on Claude Code that runs my engineering and operations work out of a single repository. The point of it is that context and routing live in version control instead of in my head.",
+        highlights: [
+            "Eleven custom skills that collapse a recurring multi step workflow into one command",
+            "Task routing that resolves a request to the correct repository, then pulls the matching ticket and meeting notes before any work starts",
+            "MCP server integrations for issue tracking, documents, calendar, and browser control",
+            "Session lifecycle hooks that carry state across otherwise isolated agent sessions, so work done in one repository is visible from another",
+            "State and decision files that survive a context window reset, which is what keeps a long running agent useful instead of amnesiac"
+        ],
+        stack: ["Claude Code", "MCP", "Agent skills", "Bash", "Git hooks"]
+    },
+    {
+        title: "AI receptionist for service businesses",
+        status: "Built and marketed",
+        summary: "An inbound voice agent built for service businesses, plumbers and HVAC companies and remodelers, where a missed call is a lost job and nobody is free to answer the phone. I designed the conversation architecture, then productized it end to end: who it is for, how it is priced, and the marketing site that sells it.",
+        highlights: [
+            "Layered agent specification covering identity, objective, and what counts as a successful call",
+            "Urgency triage ahead of everything else, with an emergency path that transfers to a human rather than booking",
+            "A required fields gate so the agent cannot book without service address, callback number, and job details",
+            "Tool calls for calendar booking, contact record updates, and call transfer",
+            "Voice specific style constraints, one question at a time and no system vocabulary, because a prompt that reads well silently sounds robotic out loud",
+            "Designed and built the product site that explains and sells the system"
+        ],
+        stack: ["Prompt engineering", "Conversation design", "Voice AI", "Tool calling"],
+        link: "https://greatlakescreative.co",
+        linkLabel: "See the product site"
+    },
+    {
+        title: "Local meeting intelligence pipeline",
+        status: "Running daily",
+        summary: "Meeting capture, transcription, and summarization that runs entirely on my machine. Built on device because the alternative was sending a healthcare employer's calls to a third party note taker, which is not a tradeoff worth making.",
+        highlights: [
+            "A watcher that detects an active microphone and starts multi track capture on its own",
+            "Whisper transcription with voice activity detection, which is what keeps silence from being hallucinated into text",
+            "Speaker attribution across tracks to work out who actually said what",
+            "Summaries generated into a fixed shape, leading with my action items and what other people owe me",
+            "Any past meeting can be re summarized against a new question without re recording it"
+        ],
+        stack: ["Python", "Bash", "Whisper", "ffmpeg", "launchd", "Claude"]
+    },
+    {
+        title: "Serverless intake and follow up backend",
+        status: "In production across client sites",
+        summary: "One Cloudflare Worker on D1 that handles form submissions for every site I run, separated by a tenant slug, with scheduled follow up email sequences on top of it. It replaced a per site third party form service.",
+        highlights: [
+            "Multiple tenants behind a single deployment, routed by a site identifier on the request",
+            "D1 as the submission store so every lead is queryable rather than living only in an inbox",
+            "Transactional email delivery through Resend, with spam placement verified per domain",
+            "Cron triggered follow up sequences that fire on a schedule after a site goes live",
+            "Runs inside the free tier, which is the constraint that shaped the whole design"
+        ],
+        stack: ["Cloudflare Workers", "D1", "Cron triggers", "Resend", "JavaScript"]
+    }
 ];
 
 export const websites = [
     {
-        title: 'Michigan Township Association', 
-        description: 'The Michigan Township Association website stands out as a sophisticated platform that leverages cutting-edge software development practices to serve its members effectively. One of its key features is a secure members portal with login functionality, providing exclusive access to valuable resources and tools. The website also demonstrates seamless integration with external systems through its API connection to Impexium, a membership management platform. This integration allows for efficient data exchange, ensuring that member information is up-to-date and synchronized across platforms. Overall, the Michigan Township Association website showcases a high level of software development expertise, offering a seamless and secure digital experience for its members.', 
-        stack: [html, css, javascript, php, sql, wordpress],
-        link: 'https://michigantownships.org/'
+        title: 'Five Star Renovations',
+        context: 'Client project',
+        description: 'Marketing site for an Indiana custom home builder and remodeler. Static build deployed on Cloudflare Workers, with the quote form posting into a shared serverless backend that stores the submission and emails the lead through.',
+        stack: [html, css, javascript, cloudflare],
+        link: 'https://fivestarrenovationsindiana.com/',
+        media: fiveStarShot
     },
     {
-        title: 'Shumaker Technology Group', 
-        description: "The Shumaker Technology Group website showcases a high standard of web development, featuring a modern and professional design. Developed with a focus on user engagement, the site offers visitors an immersive experience with its clean layout and intuitive navigation. Behind the scenes, the website is powered by advanced technologies such as React and Node.js, ensuring a fast and responsive performance. It incorporates various elements, including a portfolio showcasing past projects, a blog section for industry insights, and a contact form for business inquiries. The website's use of innovative design principles and cutting-edge technologies demonstrates the company's commitment to delivering top-notch digital solutions. Overall, the Shumaker Technology Group website stands as a testament to excellence in web development, serving as a valuable asset for the company's online presence.", 
-        stack: [html, css, javascript, php, wordpress],
-        link: 'https://www.shumakergroup.com/'
+        title: 'Polished Cleaning Co',
+        context: 'Client project',
+        description: 'Site for an Indianapolis cleaning company, built around one primary action. Every section routes to a quote request or a phone call, and the form runs through the same serverless intake backend.',
+        stack: [html, css, javascript, cloudflare],
+        link: 'https://polishedcleaningcollc.com/',
+        media: polishedShot
     },
     {
-        title: 'Client - Joyful Juniper', 
-        description: 'Developed an ecommerce platform using WordPress, PHP, Laravel, and jQuery, creating a seamless shopping experience with custom product pages and dynamic user interactions. Implemented secure payment gateways, user authentication, and real-time inventory management, ensuring smooth transactions and accurate stock updates.', 
-        stack: [html, css, javascript, php, sql, wordpress],
-        link: 'https://juniebox.com/'
+        title: 'BT-Go Travel',
+        context: 'Client project',
+        description: 'Site for an independent travel advisor. The monthly deals and destination guide sections are driven by published Google Sheets fetched as CSV at page load, so the owner updates live content from a spreadsheet and never needs a developer. Consultations book through an embedded scheduler.',
+        stack: [html, css, javascript, cloudflare],
+        link: 'https://btgotravel.com/',
+        media: btGoShot
     },
     {
-        title: 'Allendale Charter Township', 
-        description: 'The Allendale Charter Township website represents a pinnacle of modern web development, featuring a robust and user-centric design. Built with a focus on accessibility and ease of use, the site offers residents and visitors a seamless browsing experience. Behind the scenes, the website boasts a well-structured architecture, leveraging technologies such as React and Node.js to deliver dynamic and responsive content. It incorporates a variety of features, including a searchable database for meeting minutes, streamlined forms for permits and licenses, and a visually engaging layout that highlights important township information. Overall, the Allendale Charter Township website showcases excellence in web development, combining functionality with aesthetics to serve the community effectively.', 
-        stack: [html, css, javascript, php, wordpress],
-        link: 'https://allendalemi.gov/'
+        title: 'Michigan Townships Association',
+        context: 'Shumaker Technology Group',
+        description: 'Member facing work on the state association site, including the secure members portal and an API integration with Impexium, their membership management platform, so member records stay in sync between the two systems instead of being maintained twice.',
+        stack: [php, sql, javascript, wordpress],
+        link: 'https://michigantownships.org/',
+        media: michiganTownshipsShot
     },
     {
-        title: 'Madison Charter Township', 
-        description: "The Madison Charter Township website exemplifies modern web development practices, featuring a sleek and intuitive design tailored for ease of use. Developed with a strong emphasis on user experience, the site offers residents and visitors a seamless browsing experience across all devices. Behind the scenes, the website utilizes advanced technologies such as React and TypeScript to deliver dynamic and interactive content. It incorporates various functionalities, including a comprehensive news section, an events calendar, and online forms for permits and services. The website's well-organized architecture and efficient codebase contribute to its fast loading times and overall performance. In summary, the Madison Charter Township website demonstrates excellence in web development, providing a valuable resource for the community.", 
-        stack: [html, css, javascript, php, wordpress],
-        link: 'https://madisontwpmi.gov/'
-    },
-    /**{
-        title: 'Flip Game', 
-        description: 'A Memory based Game made up of fliped tiles which has some image on their rear side. One has to match cards bearing identical images with least amount of flips to win the game. Also integrated with a real-time leaderboard.', 
-        stack: [reactjs, tailwind, typescript, nodejs, mongodb],
-        link: 'https://flipgame.aayush65.com',
-        source: "https://github.com/Aayush65/flipgame"
+        title: 'Allendale Charter Township',
+        context: 'Shumaker Technology Group',
+        description: 'Municipal site built around the handful of things residents actually arrive looking for: searchable meeting minutes, permit and license forms, payments, and department contacts. Custom WordPress build on PHP templates.',
+        stack: [php, javascript, css, wordpress],
+        link: 'https://allendalemi.gov/',
+        media: allendaleShot
     },
     {
-        title: 'Wordle2', 
-        description: "A game inspired by the NYT's Wordle Game. You can show your command of English vocabulary and also learn in this game.",
-        stack: [reactjs, tailwind, typescript],
-        link: 'https://wordle2.aayush65.com',
-        source: "https://github.com/Aayush65/Wordle2"
+        title: 'Madison Charter Township',
+        context: 'Shumaker Technology Group',
+        description: 'Township site with a news feed, events calendar, and online forms for permits and services, structured so a resident landing from a search result finds the right page without hunting through navigation.',
+        stack: [php, javascript, css, wordpress],
+        link: 'https://madisontwpmi.gov/',
+        media: madisonShot
     },
     {
-        title: 'Sudoku', 
-        description: 'A Sudoku Website which can generate all levels of unfilled sudokus to play with alongwith the ability to complete any possible unfilled sudoku. It also helps the player along the way by highlighting possible conflicts while cell filling.', 
-        stack: [reactjs, tailwind, typescript],
-        link: 'https://sudoku.aayush65.com',
-        source: "https://github.com/Aayush65/sudoku"
-    },**/
+        title: 'Shumaker Technology Group',
+        context: 'Employer website',
+        description: 'Company site for the agency, covering marketing pages, the project portfolio, and the inbound quote and contact flow. Built and maintained on WordPress with custom PHP templates.',
+        stack: [php, javascript, css, wordpress],
+        link: 'https://www.shumakergroup.com/',
+        media: shumakerShot
+    }
 ]
 
 export const projects = [
-
     {
         title: "Custom Workout Generator",
-        description: "A smart workout generation web app using ReactjS & TailwindCSS for personalized training plans for over 100 weekly users. Using a rule-based algorithm for effective workouts catering to all experience levels and environments. Utilizing LocalStorage API to store and persist user workouts",
+        description: "A workout generation app that builds personalized training plans from a rule based engine, covering every experience level and whether someone is training in a gym or at home. Workouts persist client side through the LocalStorage API. Reached over 100 weekly users.",
         stack: [javascript, html, css, reactjs],
         link: 'https://workouttracket.netlify.app/',
         source: "https://github.com/nehrtmat/workout-tracker",
         media: workoutTracker
     },
     {
-        title: "Netflix Clone",
-        description: "Simplified Netflix web app, including web pages, database & server to process data. Developed a dynamic webpage to to view movies using ReactjS and API request. Implemented secure authentication and sign up with Firebase.",
-        stack: [javascript, html, css, reactjs],
-        link: 'https://netflixclonemn.netlify.app/',
-        source: "https://github.com/nehrtmat/netflix-clone",
-        media: netflixClone
-    },    
-    {
-        title: "Todo List",
-        description: "I created a Todo List application that allows users to add, delete, and sort tasks efficiently. This project was an excellent opportunity to learn and implement the principles of CRUD (Create, Read, Update, Delete) operations in a practical, user-friendly web application.",
-        stack: [javascript, html, css, reactjs],
-        source: "https://github.com/nehrtmat/Todo-List",
-        media: toDoList
-    },
-    {
-        title: 'Portfolio', 
-        description: 'My portfolio website', 
+        title: 'This portfolio',
+        description: 'Built with React, TypeScript, and Tailwind on Vite. Light and dark themes, a tilt reactive card layer, and the site previews above are build time captures rather than live embeds, since every host worth linking to blocks framing.',
         stack: [reactjs, tailwind, typescript],
         link: 'https://matthewnehrt.netlify.app/',
         source: "https://github.com/nehrtmat/Portfolio",
-        media: myPortfolio
+        media: portfolioPreview
     }
-    
 ]

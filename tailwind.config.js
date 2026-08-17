@@ -18,7 +18,9 @@ export const theme = {
       xs: "450px",
     },
     backgroundImage: {
-      "hero-pattern-dark": "url('/src/assets/herobgdark.png')",
+      // JPEG instead of the 2.4MB PNG. The PNG's alpha channel was fully
+      // opaque, so this is pixel identical at a sixth of the weight.
+      "hero-pattern-dark": "url('/src/assets/herobgdark.jpg')",
       "hero-pattern-light": "url('/src/assets/herobglight.jpg')",
     },
   },

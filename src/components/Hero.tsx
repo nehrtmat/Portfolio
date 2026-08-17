@@ -21,10 +21,13 @@ const Hero = () => {
 							<a href='https://github.com/nehrtmat' target='__blank'><img src={github} alt="github" className={`${isLight ? '' : "invert"} w-7 md:w-10 hover:scale-105`} /></a>
 							<a href='mailto:minehrt@gmail.com' target='__blank'><img src={gmail} alt="gmail" className='w-7 md:w-10 hover:scale-105' /></a>
 						</div>
-						<p className={`${styles.heroSubText} ${isLight ? "text-black-200" : "text-white-100"} mt-2`}>I am a 
+						<p className={`${styles.heroSubText} ${isLight ? "text-black-200" : "text-white-100"} mt-2`}>I am an 
 						<span className='text-secondary-light'>
-							<Typewriter words={[' Full Stack Developer.', ' U/X Designer.', ' Software Engineer.']} loop={0} cursor cursorStyle='_' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
+							<Typewriter words={[' AI Engineer.', ' Agent Builder.', ' Automation Architect.', ' Software Engineer.']} loop={0} cursor cursorStyle='_' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
 						</span></p>
+							<p className={`${isLight ? "text-secondary-text-light" : "text-secondary-dark"} text-sm md:text-base leading-[26px] max-w-md`}>
+								I build agents, automations, and workflows that take real work off people's plates.
+							</p>
 					</div>
 					<img src={comp} alt="Working Man" className='pointer-events-none' />
 				</div>

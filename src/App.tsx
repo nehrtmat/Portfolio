@@ -15,10 +15,10 @@ function App() {
 	return (
 		<context.Provider value={{ isLight, setIsLight }}>
 			<Router>
+				{/* One Routes block: two of them made each set warn
+				    "No routes matched location" for the other's path. */}
 				<Routes>
 					<Route path="/" element={<MainSite />} />
-				</Routes>
-				<Routes>
 					<Route path="/resume" element={<Resume />} />
 				</Routes>
 			</Router>

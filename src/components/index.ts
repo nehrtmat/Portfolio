@@ -2,6 +2,7 @@ import Hero from './Hero';
 import Navbar from './Navbar';
 import Resume from './Resume';
 import About from './About';
+import AIWork from './AIWork';
 import Tech from './Tech';
 import Websites from './Websites';
 import Footer from './Footer';
@@ -12,6 +13,7 @@ export {
   Navbar,
   Resume,
   About,
+  AIWork,
   Tech,
   Websites,
   Projects,
